@@ -41179,7 +41179,7 @@ components:
         intent:
           allOf:
           - $ref: '#/components/schemas/IntentEnum'
-          default: verification
+          default: api
         user:
           type: integer
         description:
@@ -45162,7 +45162,7 @@ components:
         intent:
           allOf:
           - $ref: '#/components/schemas/IntentEnum'
-          default: verification
+          default: api
         user:
           type: integer
         user_obj:
@@ -45240,7 +45240,7 @@ components:
         intent:
           allOf:
           - $ref: '#/components/schemas/IntentEnum'
-          default: verification
+          default: api
         user:
           type: integer
         description:
