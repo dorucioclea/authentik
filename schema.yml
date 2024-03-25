@@ -4001,7 +4001,6 @@ paths:
         name: intent
         schema:
           type: string
-          default: verification
           enum:
           - api
           - app_password
@@ -4614,7 +4613,6 @@ paths:
           type: array
           items:
             type: string
-            default: internal
             enum:
             - external
             - internal
@@ -6670,7 +6668,6 @@ paths:
         name: severity
         schema:
           type: string
-          default: notice
           enum:
           - alert
           - notice
@@ -7070,7 +7067,6 @@ paths:
         name: mode
         schema:
           type: string
-          default: local
           enum:
           - email
           - local
@@ -7410,7 +7406,6 @@ paths:
         name: invalid_response_action
         schema:
           type: string
-          default: retry
           enum:
           - restart
           - restart_with_context
@@ -7461,7 +7456,6 @@ paths:
         name: policy_engine_mode
         schema:
           type: string
-          default: any
           enum:
           - all
           - any
@@ -7847,7 +7841,6 @@ paths:
         name: denied_action
         schema:
           type: string
-          default: message_continue
           enum:
           - continue
           - message
@@ -15749,7 +15742,6 @@ paths:
         name: client_type
         schema:
           type: string
-          default: confidential
           enum:
           - confidential
           - public
@@ -15766,7 +15758,6 @@ paths:
         name: issuer_mode
         schema:
           type: string
-          default: per_provider
           enum:
           - global
           - per_provider
@@ -15829,7 +15820,6 @@ paths:
         name: sub_mode
         schema:
           type: string
-          default: hashed_user_id
           enum:
           - hashed_user_id
           - user_email
@@ -17065,7 +17055,6 @@ paths:
         name: digest_algorithm
         schema:
           type: string
-          default: http://www.w3.org/2001/04/xmlenc#sha256
           enum:
           - http://www.w3.org/2000/09/xmldsig#sha1
           - http://www.w3.org/2001/04/xmldsig-more#sha384
@@ -17134,7 +17123,6 @@ paths:
         name: signature_algorithm
         schema:
           type: string
-          default: http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
           enum:
           - http://www.w3.org/2000/09/xmldsig#dsa-sha1
           - http://www.w3.org/2000/09/xmldsig#rsa-sha1
@@ -17156,7 +17144,6 @@ paths:
         name: sp_binding
         schema:
           type: string
-          default: redirect
           title: Service Provider Binding
           enum:
           - post
@@ -20370,7 +20357,6 @@ paths:
         name: policy_engine_mode
         schema:
           type: string
-          default: any
           enum:
           - all
           - any
@@ -20403,7 +20389,6 @@ paths:
         name: user_matching_mode
         schema:
           type: string
-          default: identifier
           enum:
           - email_deny
           - email_link
@@ -20738,7 +20723,6 @@ paths:
         name: policy_engine_mode
         schema:
           type: string
-          default: any
           enum:
           - all
           - any
@@ -20759,7 +20743,6 @@ paths:
         name: user_matching_mode
         schema:
           type: string
-          default: identifier
           enum:
           - email_deny
           - email_link
@@ -21082,7 +21065,6 @@ paths:
         name: binding_type
         schema:
           type: string
-          default: REDIRECT
           enum:
           - POST
           - POST_AUTO
@@ -21095,7 +21077,6 @@ paths:
         name: digest_algorithm
         schema:
           type: string
-          default: http://www.w3.org/2001/04/xmlenc#sha256
           enum:
           - http://www.w3.org/2000/09/xmldsig#sha1
           - http://www.w3.org/2001/04/xmldsig-more#sha384
@@ -21131,7 +21112,6 @@ paths:
         name: name_id_policy
         schema:
           type: string
-          default: urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
           enum:
           - urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
           - urn:oasis:names:tc:SAML:2.0:nameid-format:WindowsDomainQualifiedName
@@ -21168,7 +21148,6 @@ paths:
         name: policy_engine_mode
         schema:
           type: string
-          default: any
           enum:
           - all
           - any
@@ -21190,7 +21169,6 @@ paths:
         name: signature_algorithm
         schema:
           type: string
-          default: http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
           enum:
           - http://www.w3.org/2000/09/xmldsig#dsa-sha1
           - http://www.w3.org/2000/09/xmldsig#rsa-sha1
@@ -21228,7 +21206,6 @@ paths:
         name: user_matching_mode
         schema:
           type: string
-          default: identifier
           enum:
           - email_deny
           - email_link
@@ -23144,7 +23121,6 @@ paths:
         name: auth_type
         schema:
           type: string
-          default: basic
           enum:
           - basic
           - bearer
@@ -24058,7 +24034,6 @@ paths:
         name: not_configured_action
         schema:
           type: string
-          default: skip
           enum:
           - configure
           - deny
@@ -24378,7 +24353,6 @@ paths:
         name: resident_key_requirement
         schema:
           type: string
-          default: preferred
           enum:
           - discouraged
           - preferred
@@ -24402,7 +24376,6 @@ paths:
         name: user_verification
         schema:
           type: string
-          default: preferred
           enum:
           - discouraged
           - preferred
@@ -24933,7 +24906,6 @@ paths:
         name: mode
         schema:
           type: string
-          default: expiring
           enum:
           - always_require
           - expiring
@@ -28470,7 +28442,6 @@ paths:
         name: geoip_binding
         schema:
           type: string
-          default: no_binding
           enum:
           - bind_continent
           - bind_continent_country
@@ -28491,7 +28462,6 @@ paths:
         name: network_binding
         schema:
           type: string
-          default: no_binding
           enum:
           - bind_asn
           - bind_asn_network
@@ -29106,7 +29076,6 @@ paths:
         name: user_creation_mode
         schema:
           type: string
-          default: create_when_required
           enum:
           - always_create
           - create_when_required
@@ -29123,7 +29092,6 @@ paths:
         name: user_type
         schema:
           type: string
-          default: external
           enum:
           - external
           - internal
@@ -30098,11 +30066,9 @@ components:
           readOnly: true
         open_in_new_tab:
           type: boolean
-          default: false
           description: Open launch URL in a new browser tab or window.
         meta_launch_url:
           type: string
-          default: ''
           format: uri
         meta_icon:
           type: string
@@ -30113,17 +30079,12 @@ components:
           readOnly: true
         meta_description:
           type: string
-          default: ''
         meta_publisher:
           type: string
-          default: ''
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         group:
           type: string
-          default: ''
       required:
       - backchannel_providers_obj
       - launch_url
@@ -30155,25 +30116,18 @@ components:
             type: integer
         open_in_new_tab:
           type: boolean
-          default: false
           description: Open launch URL in a new browser tab or window.
         meta_launch_url:
           type: string
-          default: ''
           format: uri
         meta_description:
           type: string
-          default: ''
         meta_publisher:
           type: string
-          default: ''
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         group:
           type: string
-          default: ''
       required:
       - name
       - slug
@@ -30234,17 +30188,13 @@ components:
           type: string
           nullable: true
         user_verification:
-          allOf:
-          - $ref: '#/components/schemas/UserVerificationEnum'
-          default: preferred
+          $ref: '#/components/schemas/UserVerificationEnum'
         authenticator_attachment:
           allOf:
           - $ref: '#/components/schemas/AuthenticatorAttachmentEnum'
           nullable: true
         resident_key_requirement:
-          allOf:
-          - $ref: '#/components/schemas/ResidentKeyRequirementEnum'
-          default: preferred
+          $ref: '#/components/schemas/ResidentKeyRequirementEnum'
       required:
       - component
       - meta_model_name
@@ -30274,17 +30224,13 @@ components:
           nullable: true
           minLength: 1
         user_verification:
-          allOf:
-          - $ref: '#/components/schemas/UserVerificationEnum'
-          default: preferred
+          $ref: '#/components/schemas/UserVerificationEnum'
         authenticator_attachment:
           allOf:
           - $ref: '#/components/schemas/AuthenticatorAttachmentEnum'
           nullable: true
         resident_key_requirement:
-          allOf:
-          - $ref: '#/components/schemas/ResidentKeyRequirementEnum'
-          default: preferred
+          $ref: '#/components/schemas/ResidentKeyRequirementEnum'
       required:
       - name
     AuthenticatedSession:
@@ -30534,7 +30480,6 @@ components:
           type: string
         admin_integration_key:
           type: string
-          default: ''
       required:
       - api_hostname
       - client_id
@@ -30601,11 +30546,9 @@ components:
           minLength: 1
         admin_integration_key:
           type: string
-          default: ''
         admin_secret_key:
           type: string
           writeOnly: true
-          default: ''
       required:
       - api_hostname
       - client_id
@@ -30702,14 +30645,10 @@ components:
           type: string
         auth_password:
           type: string
-          default: ''
         auth_type:
-          allOf:
-          - $ref: '#/components/schemas/AuthTypeEnum'
-          default: basic
+          $ref: '#/components/schemas/AuthTypeEnum'
         verify_only:
           type: boolean
-          default: false
           description: When enabled, the Phone number is only used during enrollment
             to verify the users authenticity. Only a hash of the phone number is saved
             to ensure it is not reused in the future.
@@ -30763,14 +30702,10 @@ components:
           minLength: 1
         auth_password:
           type: string
-          default: ''
         auth_type:
-          allOf:
-          - $ref: '#/components/schemas/AuthTypeEnum'
-          default: basic
+          $ref: '#/components/schemas/AuthTypeEnum'
         verify_only:
           type: boolean
-          default: false
           description: When enabled, the Phone number is only used during enrollment
             to verify the users authenticity. Only a hash of the phone number is saved
             to ensure it is not reused in the future.
@@ -30867,12 +30802,10 @@ components:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 6
         token_length:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 12
       required:
       - component
       - meta_model_name
@@ -30905,12 +30838,10 @@ components:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 6
         token_length:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 12
       required:
       - name
     AuthenticatorTOTPChallenge:
@@ -31061,9 +30992,7 @@ components:
           items:
             $ref: '#/components/schemas/FlowSet'
         not_configured_action:
-          allOf:
-          - $ref: '#/components/schemas/NotConfiguredActionEnum'
-          default: skip
+          $ref: '#/components/schemas/NotConfiguredActionEnum'
         device_classes:
           type: array
           items:
@@ -31079,13 +31008,11 @@ components:
             is not prompted again.
         last_auth_threshold:
           type: string
-          default: seconds=0
           description: If any of the user's device has been used within this threshold,
             this stage will be skipped
         webauthn_user_verification:
           allOf:
           - $ref: '#/components/schemas/UserVerificationEnum'
-          default: preferred
           description: |-
             Enforce user verification for WebAuthn devices.
 
@@ -31111,9 +31038,7 @@ components:
           items:
             $ref: '#/components/schemas/FlowSetRequest'
         not_configured_action:
-          allOf:
-          - $ref: '#/components/schemas/NotConfiguredActionEnum'
-          default: skip
+          $ref: '#/components/schemas/NotConfiguredActionEnum'
         device_classes:
           type: array
           items:
@@ -31130,13 +31055,11 @@ components:
         last_auth_threshold:
           type: string
           minLength: 1
-          default: seconds=0
           description: If any of the user's device has been used within this threshold,
             this stage will be skipped
         webauthn_user_verification:
           allOf:
           - $ref: '#/components/schemas/UserVerificationEnum'
-          default: preferred
           description: |-
             Enforce user verification for WebAuthn devices.
 
@@ -31347,7 +31270,6 @@ components:
           readOnly: true
         enabled:
           type: boolean
-          default: true
         managed_models:
           type: array
           items:
@@ -31357,7 +31279,6 @@ components:
           readOnly: true
         content:
           type: string
-          default: ''
       required:
       - last_applied
       - last_applied_hash
@@ -31379,10 +31300,8 @@ components:
         context: {}
         enabled:
           type: boolean
-          default: true
         content:
           type: string
-          default: ''
       required:
       - name
     BlueprintInstanceStatusEnum:
@@ -31413,16 +31332,12 @@ components:
             for `aa.b` and `ba.b`
         default:
           type: boolean
-          default: false
         branding_title:
           type: string
-          default: authentik
         branding_logo:
           type: string
-          default: /static/dist/assets/icons/icon_left_brand.svg
         branding_favicon:
           type: string
-          default: /static/dist/assets/icons/icon.png
         flow_authentication:
           type: string
           format: uuid
@@ -31467,19 +31382,15 @@ components:
             for `aa.b` and `ba.b`
         default:
           type: boolean
-          default: false
         branding_title:
           type: string
           minLength: 1
-          default: authentik
         branding_logo:
           type: string
           minLength: 1
-          default: /static/dist/assets/icons/icon_left_brand.svg
         branding_favicon:
           type: string
           minLength: 1
-          default: /static/dist/assets/icons/icon.png
         flow_authentication:
           type: string
           format: uuid
@@ -31617,10 +31528,8 @@ components:
           description: Public key, acquired your captcha Provider.
         js_url:
           type: string
-          default: https://www.recaptcha.net/recaptcha/api.js
         api_url:
           type: string
-          default: https://www.recaptcha.net/recaptcha/api/siteverify
       required:
       - component
       - meta_model_name
@@ -31652,11 +31561,9 @@ components:
         js_url:
           type: string
           minLength: 1
-          default: https://www.recaptcha.net/recaptcha/api.js
         api_url:
           type: string
           minLength: 1
-          default: https://www.recaptcha.net/recaptcha/api/siteverify
       required:
       - name
       - private_key
@@ -31769,7 +31676,6 @@ components:
         key_data:
           type: string
           writeOnly: true
-          default: ''
           description: Optional Private Key. If this is set, you can use this keypair
             for encryption.
       required:
@@ -32012,12 +31918,9 @@ components:
           items:
             $ref: '#/components/schemas/FlowSet'
         mode:
-          allOf:
-          - $ref: '#/components/schemas/ConsentStageModeEnum'
-          default: expiring
+          $ref: '#/components/schemas/ConsentStageModeEnum'
         consent_expire_in:
           type: string
-          default: weeks=4
           title: Consent expires in
           description: 'Offset after which consent expires. (Format: hours=1;minutes=2;seconds=3).'
       required:
@@ -32049,13 +31952,10 @@ components:
           items:
             $ref: '#/components/schemas/FlowSetRequest'
         mode:
-          allOf:
-          - $ref: '#/components/schemas/ConsentStageModeEnum'
-          default: expiring
+          $ref: '#/components/schemas/ConsentStageModeEnum'
         consent_expire_in:
           type: string
           minLength: 1
-          default: weeks=4
           title: Consent expires in
           description: 'Offset after which consent expires. (Format: hours=1;minutes=2;seconds=3).'
       required:
@@ -32190,7 +32090,6 @@ components:
             $ref: '#/components/schemas/FlowSet'
         deny_message:
           type: string
-          default: ''
       required:
       - component
       - meta_model_name
@@ -32211,7 +32110,6 @@ components:
             $ref: '#/components/schemas/FlowSetRequest'
         deny_message:
           type: string
-          default: ''
       required:
       - name
     Device:
@@ -32327,7 +32225,6 @@ components:
           type: string
         local:
           type: boolean
-          default: false
           description: If enabled, use the local connection. Required Docker socket/Kubernetes
             Integration
         component:
@@ -32379,7 +32276,6 @@ components:
           minLength: 1
         local:
           type: boolean
-          default: false
           description: If enabled, use the local connection. Required Docker socket/Kubernetes
             Integration
         url:
@@ -32415,7 +32311,6 @@ components:
           maxLength: 253
         is_primary:
           type: boolean
-          default: true
         tenant:
           type: string
           format: uuid
@@ -32433,7 +32328,6 @@ components:
           maxLength: 253
         is_primary:
           type: boolean
-          default: true
         tenant:
           type: string
           format: uuid
@@ -32483,7 +32377,6 @@ components:
           type: string
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         component:
@@ -32508,17 +32401,14 @@ components:
           readOnly: true
         result:
           type: boolean
-          default: false
         wait_min:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 5
         wait_max:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 30
       required:
       - bound_to
       - component
@@ -32536,22 +32426,18 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         result:
           type: boolean
-          default: false
         wait_min:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 5
         wait_max:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 30
       required:
       - name
     DummyStage:
@@ -32587,7 +32473,6 @@ components:
             $ref: '#/components/schemas/FlowSet'
         throw_error:
           type: boolean
-          default: false
       required:
       - component
       - meta_model_name
@@ -32608,7 +32493,6 @@ components:
             $ref: '#/components/schemas/FlowSetRequest'
         throw_error:
           type: boolean
-          default: false
       required:
       - name
     DuoDevice:
@@ -32716,51 +32600,39 @@ components:
             $ref: '#/components/schemas/FlowSet'
         use_global_settings:
           type: boolean
-          default: false
           description: When enabled, global Email connection settings will be used
             and connection settings below will be ignored.
         host:
           type: string
-          default: localhost
         port:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 25
         username:
           type: string
-          default: ''
         use_tls:
           type: boolean
-          default: false
         use_ssl:
           type: boolean
-          default: false
         timeout:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 10
         from_address:
           type: string
           format: email
-          default: system@authentik.local
           maxLength: 254
         token_expiry:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 30
           description: Time in minutes the token sent is valid.
         subject:
           type: string
-          default: authentik
         template:
           type: string
-          default: email/password_reset.html
         activate_user_on_success:
           type: boolean
-          default: false
           description: Activate users upon completion of stage.
       required:
       - component
@@ -32782,59 +32654,46 @@ components:
             $ref: '#/components/schemas/FlowSetRequest'
         use_global_settings:
           type: boolean
-          default: false
           description: When enabled, global Email connection settings will be used
             and connection settings below will be ignored.
         host:
           type: string
           minLength: 1
-          default: localhost
         port:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 25
         username:
           type: string
-          default: ''
         password:
           type: string
           writeOnly: true
-          default: ''
         use_tls:
           type: boolean
-          default: false
         use_ssl:
           type: boolean
-          default: false
         timeout:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 10
         from_address:
           type: string
           format: email
           minLength: 1
-          default: system@authentik.local
           maxLength: 254
         token_expiry:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 30
           description: Time in minutes the token sent is valid.
         subject:
           type: string
           minLength: 1
-          default: authentik
         template:
           type: string
           minLength: 1
-          default: email/password_reset.html
         activate_user_on_success:
           type: boolean
-          default: false
           description: Activate users upon completion of stage.
       required:
       - name
@@ -32878,7 +32737,6 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 1
       required:
       - auth_mode
       - host
@@ -32914,7 +32772,6 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 1
       required:
       - auth_mode
       - host
@@ -33060,7 +32917,6 @@ components:
           type: string
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         component:
@@ -33281,7 +33137,6 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         action:
@@ -33547,7 +33402,6 @@ components:
           type: string
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         component:
@@ -33590,7 +33444,6 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         expression:
@@ -33777,12 +33630,9 @@ components:
           description: Get count of cached flows
           readOnly: true
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         compatibility_mode:
           type: boolean
-          default: false
           description: Enable compatibility mode, increases compatibility with password
             managers on mobile devices.
         export_url:
@@ -33790,13 +33640,10 @@ components:
           description: Get export URL for flow
           readOnly: true
         layout:
-          allOf:
-          - $ref: '#/components/schemas/FlowLayoutEnum'
-          default: stacked
+          $ref: '#/components/schemas/FlowLayoutEnum'
         denied_action:
           allOf:
           - $ref: '#/components/schemas/DeniedActionEnum'
-          default: message_continue
           description: |-
             Configure what should happen when a flow denies access to a user.
 
@@ -33806,7 +33653,6 @@ components:
         authentication:
           allOf:
           - $ref: '#/components/schemas/AuthenticationEnum'
-          default: none
           description: |-
             Required level of authentication and authorization to access a flow.
 
@@ -34027,22 +33873,16 @@ components:
             * `recovery` - Recovery
             * `stage_configuration` - Stage Configuration
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         compatibility_mode:
           type: boolean
-          default: false
           description: Enable compatibility mode, increases compatibility with password
             managers on mobile devices.
         layout:
-          allOf:
-          - $ref: '#/components/schemas/FlowLayoutEnum'
-          default: stacked
+          $ref: '#/components/schemas/FlowLayoutEnum'
         denied_action:
           allOf:
           - $ref: '#/components/schemas/DeniedActionEnum'
-          default: message_continue
           description: |-
             Configure what should happen when a flow denies access to a user.
 
@@ -34052,7 +33892,6 @@ components:
         authentication:
           allOf:
           - $ref: '#/components/schemas/AuthenticationEnum'
-          default: none
           description: |-
             Required level of authentication and authorization to access a flow.
 
@@ -34109,12 +33948,9 @@ components:
             it is returned as-is
           readOnly: true
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         compatibility_mode:
           type: boolean
-          default: false
           description: Enable compatibility mode, increases compatibility with password
             managers on mobile devices.
         export_url:
@@ -34122,13 +33958,10 @@ components:
           description: Get export URL for flow
           readOnly: true
         layout:
-          allOf:
-          - $ref: '#/components/schemas/FlowLayoutEnum'
-          default: stacked
+          $ref: '#/components/schemas/FlowLayoutEnum'
         denied_action:
           allOf:
           - $ref: '#/components/schemas/DeniedActionEnum'
-          default: message_continue
           description: |-
             Configure what should happen when a flow denies access to a user.
 
@@ -34175,22 +34008,16 @@ components:
             * `recovery` - Recovery
             * `stage_configuration` - Stage Configuration
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         compatibility_mode:
           type: boolean
-          default: false
           description: Enable compatibility mode, increases compatibility with password
             managers on mobile devices.
         layout:
-          allOf:
-          - $ref: '#/components/schemas/FlowLayoutEnum'
-          default: stacked
+          $ref: '#/components/schemas/FlowLayoutEnum'
         denied_action:
           allOf:
           - $ref: '#/components/schemas/DeniedActionEnum'
-          default: message_continue
           description: |-
             Configure what should happen when a flow denies access to a user.
 
@@ -34227,24 +34054,19 @@ components:
           readOnly: true
         evaluate_on_plan:
           type: boolean
-          default: false
           description: Evaluate policies during the Flow planning process.
         re_evaluate_policies:
           type: boolean
-          default: true
           description: Evaluate policies when the Stage is present to the user.
         order:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         invalid_response_action:
           allOf:
           - $ref: '#/components/schemas/InvalidResponseActionEnum'
-          default: retry
           description: |-
             Configure how the flow executor should handle an invalid response to a challenge. RETRY returns the error message and a similar challenge to the executor. RESTART restarts the flow from the beginning, and RESTART_WITH_CONTEXT restarts the flow while keeping the current context.
 
@@ -34270,24 +34092,19 @@ components:
           format: uuid
         evaluate_on_plan:
           type: boolean
-          default: false
           description: Evaluate policies during the Flow planning process.
         re_evaluate_policies:
           type: boolean
-          default: true
           description: Evaluate policies when the Stage is present to the user.
         order:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         invalid_response_action:
           allOf:
           - $ref: '#/components/schemas/InvalidResponseActionEnum'
-          default: retry
           description: |-
             Configure how the flow executor should handle an invalid response to a challenge. RETRY returns the error message and a similar challenge to the executor. RESTART restarts the flow from the beginning, and RESTART_WITH_CONTEXT restarts the flow while keeping the current context.
 
@@ -34350,7 +34167,6 @@ components:
           maxLength: 80
         is_superuser:
           type: boolean
-          default: false
           description: Users added to this group will be superusers.
         parent:
           type: string
@@ -34408,7 +34224,6 @@ components:
           description: User's display name.
         is_active:
           type: boolean
-          default: true
           title: Active
           description: Designates whether this user should be treated as active. Unselect
             this instead of deleting accounts.
@@ -34449,7 +34264,6 @@ components:
           description: User's display name.
         is_active:
           type: boolean
-          default: true
           title: Active
           description: Designates whether this user should be treated as active. Unselect
             this instead of deleting accounts.
@@ -34478,7 +34292,6 @@ components:
           maxLength: 80
         is_superuser:
           type: boolean
-          default: false
           description: Users added to this group will be superusers.
         parent:
           type: string
@@ -34605,11 +34418,9 @@ components:
             field as seaprate step.
         case_insensitive_matching:
           type: boolean
-          default: true
           description: When enabled, user fields are matched regardless of their casing.
         show_matched_user:
           type: boolean
-          default: true
           description: When a valid username/email has been entered, and this option
             is enabled, the user's username and avatar will be shown. Otherwise, the
             text that the user entered will be shown
@@ -34639,10 +34450,8 @@ components:
           description: Specify which sources should be shown.
         show_source_labels:
           type: boolean
-          default: false
         pretend_user_exists:
           type: boolean
-          default: true
           description: When enabled, the stage will succeed and continue even when
             incorrect user info is entered.
       required:
@@ -34677,11 +34486,9 @@ components:
             field as seaprate step.
         case_insensitive_matching:
           type: boolean
-          default: true
           description: When enabled, user fields are matched regardless of their casing.
         show_matched_user:
           type: boolean
-          default: true
           description: When a valid username/email has been entered, and this option
             is enabled, the user's username and avatar will be shown. Otherwise, the
             text that the user entered will be shown
@@ -34711,10 +34518,8 @@ components:
           description: Specify which sources should be shown.
         show_source_labels:
           type: boolean
-          default: false
         pretend_user_exists:
           type: boolean
-          default: true
           description: When enabled, the stage will succeed and continue even when
             incorrect user info is entered.
       required:
@@ -34773,7 +34578,6 @@ components:
           readOnly: true
         single_use:
           type: boolean
-          default: false
           description: When enabled, the invitation will be deleted after usage.
         flow:
           type: string
@@ -34806,7 +34610,6 @@ components:
           additionalProperties: {}
         single_use:
           type: boolean
-          default: false
           description: When enabled, the invitation will be deleted after usage.
         flow:
           type: string
@@ -34848,7 +34651,6 @@ components:
             $ref: '#/components/schemas/FlowSet'
         continue_flow_without_invitation:
           type: boolean
-          default: false
           description: If this flag is set, this Stage will jump to the next Stage
             when no Invitation is given. By default this Stage will cancel the Flow
             when no invitation is given.
@@ -34872,7 +34674,6 @@ components:
             $ref: '#/components/schemas/FlowSetRequest'
         continue_flow_without_invitation:
           type: boolean
-          default: false
           description: If this flag is set, this Stage will jump to the next Stage
             when no Invitation is given. By default this Stage will cancel the Flow
             when no invitation is given.
@@ -34899,7 +34700,6 @@ components:
           type: string
         local:
           type: boolean
-          default: false
           description: If enabled, use the local connection. Required Docker socket/Kubernetes
             Integration
         component:
@@ -34922,7 +34722,6 @@ components:
             the currently selected context.
         verify_ssl:
           type: boolean
-          default: true
           description: Verify SSL Certificates of the Kubernetes API endpoint
       required:
       - component
@@ -34940,7 +34739,6 @@ components:
           minLength: 1
         local:
           type: boolean
-          default: false
           description: If enabled, use the local connection. Required Docker socket/Kubernetes
             Integration
         kubeconfig:
@@ -34948,7 +34746,6 @@ components:
             the currently selected context.
         verify_ssl:
           type: boolean
-          default: true
           description: Verify SSL Certificates of the Kubernetes API endpoint
       required:
       - name
@@ -34997,7 +34794,6 @@ components:
           type: string
         base_dn:
           type: string
-          default: DC=ldap,DC=goauthentik,DC=io
           description: DN under which objects are accessible.
         bind_flow_slug:
           type: string
@@ -35017,12 +34813,10 @@ components:
           nullable: true
         tls_server_name:
           type: string
-          default: ''
         uid_start_number:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 2000
           description: The start for uidNumbers, this number is added to the user.pk
             to make sure that the numbers aren't too low for POSIX users. Default
             is 2000 to ensure that we don't collide with local users uidNumber
@@ -35030,22 +34824,16 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 4000
           description: The start for gidNumbers, this number is added to a number
             generated from the group.pk to make sure that the numbers aren't too low
             for POSIX groups. Default is 4000 to ensure that we don't collide with
             local groups or users primary groups gidNumber
         search_mode:
-          allOf:
-          - $ref: '#/components/schemas/LDAPAPIAccessMode'
-          default: direct
+          $ref: '#/components/schemas/LDAPAPIAccessMode'
         bind_mode:
-          allOf:
-          - $ref: '#/components/schemas/LDAPAPIAccessMode'
-          default: direct
+          $ref: '#/components/schemas/LDAPAPIAccessMode'
         mfa_support:
           type: boolean
-          default: true
           description: When enabled, code-based multi-factor authentication can be
             used by appending a semicolon and the TOTP code to the password. This
             should only be enabled if all users that will bind to this provider have
@@ -35189,7 +34977,6 @@ components:
           readOnly: true
         base_dn:
           type: string
-          default: DC=ldap,DC=goauthentik,DC=io
           description: DN under which objects are accessible.
         search_group:
           type: string
@@ -35203,12 +34990,10 @@ components:
           nullable: true
         tls_server_name:
           type: string
-          default: ''
         uid_start_number:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 2000
           description: The start for uidNumbers, this number is added to the user.pk
             to make sure that the numbers aren't too low for POSIX users. Default
             is 2000 to ensure that we don't collide with local users uidNumber
@@ -35216,7 +35001,6 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 4000
           description: The start for gidNumbers, this number is added to a number
             generated from the group.pk to make sure that the numbers aren't too low
             for POSIX groups. Default is 4000 to ensure that we don't collide with
@@ -35227,16 +35011,11 @@ components:
             type: string
           readOnly: true
         search_mode:
-          allOf:
-          - $ref: '#/components/schemas/LDAPAPIAccessMode'
-          default: direct
+          $ref: '#/components/schemas/LDAPAPIAccessMode'
         bind_mode:
-          allOf:
-          - $ref: '#/components/schemas/LDAPAPIAccessMode'
-          default: direct
+          $ref: '#/components/schemas/LDAPAPIAccessMode'
         mfa_support:
           type: boolean
-          default: true
           description: When enabled, code-based multi-factor authentication can be
             used by appending a semicolon and the TOTP code to the password. This
             should only be enabled if all users that will bind to this provider have
@@ -35280,7 +35059,6 @@ components:
         base_dn:
           type: string
           minLength: 1
-          default: DC=ldap,DC=goauthentik,DC=io
           description: DN under which objects are accessible.
         search_group:
           type: string
@@ -35294,12 +35072,10 @@ components:
           nullable: true
         tls_server_name:
           type: string
-          default: ''
         uid_start_number:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 2000
           description: The start for uidNumbers, this number is added to the user.pk
             to make sure that the numbers aren't too low for POSIX users. Default
             is 2000 to ensure that we don't collide with local users uidNumber
@@ -35307,22 +35083,16 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 4000
           description: The start for gidNumbers, this number is added to a number
             generated from the group.pk to make sure that the numbers aren't too low
             for POSIX groups. Default is 4000 to ensure that we don't collide with
             local groups or users primary groups gidNumber
         search_mode:
-          allOf:
-          - $ref: '#/components/schemas/LDAPAPIAccessMode'
-          default: direct
+          $ref: '#/components/schemas/LDAPAPIAccessMode'
         bind_mode:
-          allOf:
-          - $ref: '#/components/schemas/LDAPAPIAccessMode'
-          default: direct
+          $ref: '#/components/schemas/LDAPAPIAccessMode'
         mfa_support:
           type: boolean
-          default: true
           description: When enabled, code-based multi-factor authentication can be
             used by appending a semicolon and the TOTP code to the password. This
             should only be enabled if all users that will bind to this provider have
@@ -35350,7 +35120,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -35378,13 +35147,10 @@ components:
           description: Return internal model name
           readOnly: true
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -35404,7 +35170,6 @@ components:
           readOnly: true
         user_path_template:
           type: string
-          default: goauthentik.io/sources/%(slug)s
         icon:
           type: string
           nullable: true
@@ -35431,11 +35196,9 @@ components:
           type: string
         start_tls:
           type: boolean
-          default: false
           title: Enable Start TLS
         sni:
           type: boolean
-          default: false
           title: Use Server URI for SNI verification
         base_dn:
           type: string
@@ -35449,31 +35212,24 @@ components:
           description: Prepended to Base DN for Group-queries.
         user_object_filter:
           type: string
-          default: (objectClass=person)
           description: Consider Objects matching this filter to be Users.
         group_object_filter:
           type: string
-          default: (objectClass=group)
           description: Consider Objects matching this filter to be Groups.
         group_membership_field:
           type: string
-          default: member
           description: Field which contains members of a group.
         object_uniqueness_field:
           type: string
-          default: objectSid
           description: Field which contains a unique Identifier.
         sync_users:
           type: boolean
-          default: true
         sync_users_password:
           type: boolean
-          default: true
           description: When a user changes their password, sync it back to LDAP. This
             can only be enabled on a single LDAP source.
         sync_groups:
           type: boolean
-          default: true
         sync_parent_group:
           type: string
           format: uuid
@@ -35527,7 +35283,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -35539,13 +35294,10 @@ components:
           nullable: true
           description: Flow to use when enrolling new users.
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -35557,7 +35309,6 @@ components:
         user_path_template:
           type: string
           minLength: 1
-          default: goauthentik.io/sources/%(slug)s
         server_uri:
           type: string
           minLength: 1
@@ -35581,11 +35332,9 @@ components:
           writeOnly: true
         start_tls:
           type: boolean
-          default: false
           title: Enable Start TLS
         sni:
           type: boolean
-          default: false
           title: Use Server URI for SNI verification
         base_dn:
           type: string
@@ -35601,34 +35350,27 @@ components:
         user_object_filter:
           type: string
           minLength: 1
-          default: (objectClass=person)
           description: Consider Objects matching this filter to be Users.
         group_object_filter:
           type: string
           minLength: 1
-          default: (objectClass=group)
           description: Consider Objects matching this filter to be Groups.
         group_membership_field:
           type: string
           minLength: 1
-          default: member
           description: Field which contains members of a group.
         object_uniqueness_field:
           type: string
           minLength: 1
-          default: objectSid
           description: Field which contains a unique Identifier.
         sync_users:
           type: boolean
-          default: true
         sync_users_password:
           type: boolean
-          default: true
           description: When a user changes their password, sync it back to LDAP. This
             can only be enabled on a single LDAP source.
         sync_groups:
           type: boolean
-          default: true
         sync_parent_group:
           type: string
           format: uuid
@@ -36032,7 +35774,6 @@ components:
           $ref: '#/components/schemas/Event'
         seen:
           type: boolean
-          default: false
       required:
       - body
       - created
@@ -36046,7 +35787,6 @@ components:
           $ref: '#/components/schemas/EventRequest'
         seen:
           type: boolean
-          default: false
     NotificationRule:
       type: object
       description: NotificationRule Serializer
@@ -36069,7 +35809,6 @@ components:
         severity:
           allOf:
           - $ref: '#/components/schemas/SeverityEnum'
-          default: notice
           description: |-
             Controls which severity level the created notifications will have.
 
@@ -36108,7 +35847,6 @@ components:
         severity:
           allOf:
           - $ref: '#/components/schemas/SeverityEnum'
-          default: notice
           description: |-
             Controls which severity level the created notifications will have.
 
@@ -36135,9 +35873,7 @@ components:
         name:
           type: string
         mode:
-          allOf:
-          - $ref: '#/components/schemas/NotificationTransportModeEnum'
-          default: local
+          $ref: '#/components/schemas/NotificationTransportModeEnum'
         mode_verbose:
           type: string
           description: Return selected mode with a UI Label
@@ -36151,7 +35887,6 @@ components:
           nullable: true
         send_once:
           type: boolean
-          default: false
           description: Only send notification once, for example when sending a webhook
             into a chat channel.
       required:
@@ -36178,9 +35913,7 @@ components:
           type: string
           minLength: 1
         mode:
-          allOf:
-          - $ref: '#/components/schemas/NotificationTransportModeEnum'
-          default: local
+          $ref: '#/components/schemas/NotificationTransportModeEnum'
         webhook_url:
           type: string
           format: uri
@@ -36190,7 +35923,6 @@ components:
           nullable: true
         send_once:
           type: boolean
-          default: false
           description: Only send notification once, for example when sending a webhook
             into a chat channel.
       required:
@@ -36295,7 +36027,6 @@ components:
         client_type:
           allOf:
           - $ref: '#/components/schemas/ClientTypeEnum'
-          default: confidential
           description: |-
             Confidential clients are capable of maintaining the confidentiality of their credentials. Public clients are incapable
 
@@ -36309,22 +36040,18 @@ components:
           maxLength: 255
         access_code_validity:
           type: string
-          default: minutes=1
           description: 'Access codes not valid on or after current time + this value
             (Format: hours=1;minutes=2;seconds=3).'
         access_token_validity:
           type: string
-          default: hours=1
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         refresh_token_validity:
           type: string
-          default: days=30
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         include_claims_in_id_token:
           type: boolean
-          default: true
           description: Include User claims from scopes in the id_token, for applications
             that don't access the userinfo endpoint.
         signing_key:
@@ -36335,12 +36062,10 @@ components:
             is set to RS256.
         redirect_uris:
           type: string
-          default: ''
           description: Enter each URI on a new line.
         sub_mode:
           allOf:
           - $ref: '#/components/schemas/SubModeEnum'
-          default: hashed_user_id
           description: |-
             Configure what data should be used as unique User Identifier. For most cases, the default should be fine.
 
@@ -36353,7 +36078,6 @@ components:
         issuer_mode:
           allOf:
           - $ref: '#/components/schemas/IssuerModeEnum'
-          default: per_provider
           description: |-
             Configure how the issuer field of the ID Token should be filled.
 
@@ -36404,7 +36128,6 @@ components:
         client_type:
           allOf:
           - $ref: '#/components/schemas/ClientTypeEnum'
-          default: confidential
           description: |-
             Confidential clients are capable of maintaining the confidentiality of their credentials. Public clients are incapable
 
@@ -36420,24 +36143,20 @@ components:
         access_code_validity:
           type: string
           minLength: 1
-          default: minutes=1
           description: 'Access codes not valid on or after current time + this value
             (Format: hours=1;minutes=2;seconds=3).'
         access_token_validity:
           type: string
           minLength: 1
-          default: hours=1
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         refresh_token_validity:
           type: string
           minLength: 1
-          default: days=30
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         include_claims_in_id_token:
           type: boolean
-          default: true
           description: Include User claims from scopes in the id_token, for applications
             that don't access the userinfo endpoint.
         signing_key:
@@ -36448,12 +36167,10 @@ components:
             is set to RS256.
         redirect_uris:
           type: string
-          default: ''
           description: Enter each URI on a new line.
         sub_mode:
           allOf:
           - $ref: '#/components/schemas/SubModeEnum'
-          default: hashed_user_id
           description: |-
             Configure what data should be used as unique User Identifier. For most cases, the default should be fine.
 
@@ -36466,7 +36183,6 @@ components:
         issuer_mode:
           allOf:
           - $ref: '#/components/schemas/IssuerModeEnum'
-          default: per_provider
           description: |-
             Configure how the issuer field of the ID Token should be filled.
 
@@ -36593,7 +36309,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -36621,13 +36336,10 @@ components:
           description: Return internal model name
           readOnly: true
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -36647,7 +36359,6 @@ components:
           readOnly: true
         user_path_template:
           type: string
-          default: goauthentik.io/sources/%(slug)s
         icon:
           type: string
           nullable: true
@@ -36686,17 +36397,14 @@ components:
           readOnly: true
         additional_scopes:
           type: string
-          default: ''
         type:
           allOf:
           - $ref: '#/components/schemas/SourceType'
           readOnly: true
         oidc_well_known_url:
           type: string
-          default: ''
         oidc_jwks_url:
           type: string
-          default: ''
         oidc_jwks: {}
       required:
       - callback_url
@@ -36728,7 +36436,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -36740,13 +36447,10 @@ components:
           nullable: true
           description: Flow to use when enrolling new users.
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -36758,7 +36462,6 @@ components:
         user_path_template:
           type: string
           minLength: 1
-          default: goauthentik.io/sources/%(slug)s
         provider_type:
           $ref: '#/components/schemas/ProviderTypeEnum'
         request_token_url:
@@ -36795,13 +36498,10 @@ components:
           minLength: 1
         additional_scopes:
           type: string
-          default: ''
         oidc_well_known_url:
           type: string
-          default: ''
         oidc_jwks_url:
           type: string
-          default: ''
         oidc_jwks: {}
       required:
       - consumer_key
@@ -36867,9 +36567,7 @@ components:
         name:
           type: string
         type:
-          allOf:
-          - $ref: '#/components/schemas/OutpostTypeEnum'
-          default: proxy
+          $ref: '#/components/schemas/OutpostTypeEnum'
         providers:
           type: array
           items:
@@ -36968,9 +36666,7 @@ components:
           type: string
           minLength: 1
         type:
-          allOf:
-          - $ref: '#/components/schemas/OutpostTypeEnum'
-          default: proxy
+          $ref: '#/components/schemas/OutpostTypeEnum'
         providers:
           type: array
           items:
@@ -38251,7 +37947,6 @@ components:
           type: string
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         component:
@@ -38280,7 +37975,6 @@ components:
           minimum: -2147483648
         deny_only:
           type: boolean
-          default: false
       required:
       - bound_to
       - component
@@ -38299,7 +37993,6 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         days:
@@ -38308,7 +38001,6 @@ components:
           minimum: -2147483648
         deny_only:
           type: boolean
-          default: false
       required:
       - days
       - name
@@ -38325,7 +38017,6 @@ components:
           type: string
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         component:
@@ -38350,59 +38041,47 @@ components:
           readOnly: true
         password_field:
           type: string
-          default: password
           description: Field key to check, field keys defined in Prompt stages are
             available.
         amount_digits:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         amount_uppercase:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         amount_lowercase:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         amount_symbols:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         length_min:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         symbol_charset:
           type: string
-          default: '!\"#$%&''()*+,-./:;<=>?@[\]^_`{|}~ '
         error_message:
           type: string
         check_static_rules:
           type: boolean
-          default: true
         check_have_i_been_pwned:
           type: boolean
-          default: false
         check_zxcvbn:
           type: boolean
-          default: false
         hibp_allowed_count:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
           description: How many times the password hash is allowed to be on haveibeenpwned
         zxcvbn_score_threshold:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 2
           description: If the zxcvbn score is equal or less than this value, the policy
             will fail.
       required:
@@ -38422,66 +38101,53 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         password_field:
           type: string
           minLength: 1
-          default: password
           description: Field key to check, field keys defined in Prompt stages are
             available.
         amount_digits:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         amount_uppercase:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         amount_lowercase:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         amount_symbols:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         length_min:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         symbol_charset:
           type: string
           minLength: 1
-          default: '!\"#$%&''()*+,-./:;<=>?@[\]^_`{|}~ '
         error_message:
           type: string
         check_static_rules:
           type: boolean
-          default: true
         check_have_i_been_pwned:
           type: boolean
-          default: false
         check_zxcvbn:
           type: boolean
-          default: false
         hibp_allowed_count:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
           description: How many times the password hash is allowed to be on haveibeenpwned
         zxcvbn_score_threshold:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 2
           description: If the zxcvbn score is equal or less than this value, the policy
             will fail.
       required:
@@ -38532,7 +38198,6 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 5
           description: How many attempts a user has before the flow is canceled. To
             lock the user out, use a reputation policy and a user_write stage.
       required:
@@ -38569,7 +38234,6 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 5
           description: How many attempts a user has before the flow is canceled. To
             lock the user out, use a reputation policy and a user_write stage.
       required:
@@ -38598,25 +38262,18 @@ components:
             type: integer
         open_in_new_tab:
           type: boolean
-          default: false
           description: Open launch URL in a new browser tab or window.
         meta_launch_url:
           type: string
-          default: ''
           format: uri
         meta_description:
           type: string
-          default: ''
         meta_publisher:
           type: string
-          default: ''
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         group:
           type: string
-          default: ''
     PatchedAuthenticateWebAuthnStageRequest:
       type: object
       description: AuthenticateWebAuthnStage Serializer
@@ -38639,17 +38296,13 @@ components:
           nullable: true
           minLength: 1
         user_verification:
-          allOf:
-          - $ref: '#/components/schemas/UserVerificationEnum'
-          default: preferred
+          $ref: '#/components/schemas/UserVerificationEnum'
         authenticator_attachment:
           allOf:
           - $ref: '#/components/schemas/AuthenticatorAttachmentEnum'
           nullable: true
         resident_key_requirement:
-          allOf:
-          - $ref: '#/components/schemas/ResidentKeyRequirementEnum'
-          default: preferred
+          $ref: '#/components/schemas/ResidentKeyRequirementEnum'
     PatchedAuthenticatorDuoStageRequest:
       type: object
       description: AuthenticatorDuoStage Serializer
@@ -38683,11 +38336,9 @@ components:
           minLength: 1
         admin_integration_key:
           type: string
-          default: ''
         admin_secret_key:
           type: string
           writeOnly: true
-          default: ''
     PatchedAuthenticatorSMSStageRequest:
       type: object
       description: AuthenticatorSMSStage Serializer
@@ -38722,14 +38373,10 @@ components:
           minLength: 1
         auth_password:
           type: string
-          default: ''
         auth_type:
-          allOf:
-          - $ref: '#/components/schemas/AuthTypeEnum'
-          default: basic
+          $ref: '#/components/schemas/AuthTypeEnum'
         verify_only:
           type: boolean
-          default: false
           description: When enabled, the Phone number is only used during enrollment
             to verify the users authenticity. Only a hash of the phone number is saved
             to ensure it is not reused in the future.
@@ -38763,12 +38410,10 @@ components:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 6
         token_length:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 12
     PatchedAuthenticatorTOTPStageRequest:
       type: object
       description: AuthenticatorTOTPStage Serializer
@@ -38804,9 +38449,7 @@ components:
           items:
             $ref: '#/components/schemas/FlowSetRequest'
         not_configured_action:
-          allOf:
-          - $ref: '#/components/schemas/NotConfiguredActionEnum'
-          default: skip
+          $ref: '#/components/schemas/NotConfiguredActionEnum'
         device_classes:
           type: array
           items:
@@ -38823,13 +38466,11 @@ components:
         last_auth_threshold:
           type: string
           minLength: 1
-          default: seconds=0
           description: If any of the user's device has been used within this threshold,
             this stage will be skipped
         webauthn_user_verification:
           allOf:
           - $ref: '#/components/schemas/UserVerificationEnum'
-          default: preferred
           description: |-
             Enforce user verification for WebAuthn devices.
 
@@ -38849,10 +38490,8 @@ components:
         context: {}
         enabled:
           type: boolean
-          default: true
         content:
           type: string
-          default: ''
     PatchedBrandRequest:
       type: object
       description: Brand Serializer
@@ -38864,19 +38503,15 @@ components:
             for `aa.b` and `ba.b`
         default:
           type: boolean
-          default: false
         branding_title:
           type: string
           minLength: 1
-          default: authentik
         branding_logo:
           type: string
           minLength: 1
-          default: /static/dist/assets/icons/icon_left_brand.svg
         branding_favicon:
           type: string
           minLength: 1
-          default: /static/dist/assets/icons/icon.png
         flow_authentication:
           type: string
           format: uuid
@@ -38930,11 +38565,9 @@ components:
         js_url:
           type: string
           minLength: 1
-          default: https://www.recaptcha.net/recaptcha/api.js
         api_url:
           type: string
           minLength: 1
-          default: https://www.recaptcha.net/recaptcha/api/siteverify
     PatchedCertificateKeyPairRequest:
       type: object
       description: CertificateKeyPair Serializer
@@ -38950,7 +38583,6 @@ components:
         key_data:
           type: string
           writeOnly: true
-          default: ''
           description: Optional Private Key. If this is set, you can use this keypair
             for encryption.
     PatchedConnectionTokenRequest:
@@ -38978,13 +38610,10 @@ components:
           items:
             $ref: '#/components/schemas/FlowSetRequest'
         mode:
-          allOf:
-          - $ref: '#/components/schemas/ConsentStageModeEnum'
-          default: expiring
+          $ref: '#/components/schemas/ConsentStageModeEnum'
         consent_expire_in:
           type: string
           minLength: 1
-          default: weeks=4
           title: Consent expires in
           description: 'Offset after which consent expires. (Format: hours=1;minutes=2;seconds=3).'
     PatchedDenyStageRequest:
@@ -39000,7 +38629,6 @@ components:
             $ref: '#/components/schemas/FlowSetRequest'
         deny_message:
           type: string
-          default: ''
     PatchedDockerServiceConnectionRequest:
       type: object
       description: DockerServiceConnection Serializer
@@ -39010,7 +38638,6 @@ components:
           minLength: 1
         local:
           type: boolean
-          default: false
           description: If enabled, use the local connection. Required Docker socket/Kubernetes
             Integration
         url:
@@ -39041,7 +38668,6 @@ components:
           maxLength: 253
         is_primary:
           type: boolean
-          default: true
         tenant:
           type: string
           format: uuid
@@ -39054,22 +38680,18 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         result:
           type: boolean
-          default: false
         wait_min:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 5
         wait_max:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 30
     PatchedDummyStageRequest:
       type: object
       description: DummyStage Serializer
@@ -39083,7 +38705,6 @@ components:
             $ref: '#/components/schemas/FlowSetRequest'
         throw_error:
           type: boolean
-          default: false
     PatchedDuoDeviceRequest:
       type: object
       description: Serializer for Duo authenticator devices
@@ -39106,59 +38727,46 @@ components:
             $ref: '#/components/schemas/FlowSetRequest'
         use_global_settings:
           type: boolean
-          default: false
           description: When enabled, global Email connection settings will be used
             and connection settings below will be ignored.
         host:
           type: string
           minLength: 1
-          default: localhost
         port:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 25
         username:
           type: string
-          default: ''
         password:
           type: string
           writeOnly: true
-          default: ''
         use_tls:
           type: boolean
-          default: false
         use_ssl:
           type: boolean
-          default: false
         timeout:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 10
         from_address:
           type: string
           format: email
           minLength: 1
-          default: system@authentik.local
           maxLength: 254
         token_expiry:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 30
           description: Time in minutes the token sent is valid.
         subject:
           type: string
           minLength: 1
-          default: authentik
         template:
           type: string
           minLength: 1
-          default: email/password_reset.html
         activate_user_on_success:
           type: boolean
-          default: false
           description: Activate users upon completion of stage.
     PatchedEndpointRequest:
       type: object
@@ -39186,7 +38794,6 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 1
     PatchedEventMatcherPolicyRequest:
       type: object
       description: Event Matcher Policy Serializer
@@ -39196,7 +38803,6 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         action:
@@ -39409,7 +39015,6 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         expression:
@@ -39446,22 +39051,16 @@ components:
             * `recovery` - Recovery
             * `stage_configuration` - Stage Configuration
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         compatibility_mode:
           type: boolean
-          default: false
           description: Enable compatibility mode, increases compatibility with password
             managers on mobile devices.
         layout:
-          allOf:
-          - $ref: '#/components/schemas/FlowLayoutEnum'
-          default: stacked
+          $ref: '#/components/schemas/FlowLayoutEnum'
         denied_action:
           allOf:
           - $ref: '#/components/schemas/DeniedActionEnum'
-          default: message_continue
           description: |-
             Configure what should happen when a flow denies access to a user.
 
@@ -39471,7 +39070,6 @@ components:
         authentication:
           allOf:
           - $ref: '#/components/schemas/AuthenticationEnum'
-          default: none
           description: |-
             Required level of authentication and authorization to access a flow.
 
@@ -39492,24 +39090,19 @@ components:
           format: uuid
         evaluate_on_plan:
           type: boolean
-          default: false
           description: Evaluate policies during the Flow planning process.
         re_evaluate_policies:
           type: boolean
-          default: true
           description: Evaluate policies when the Stage is present to the user.
         order:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         invalid_response_action:
           allOf:
           - $ref: '#/components/schemas/InvalidResponseActionEnum'
-          default: retry
           description: |-
             Configure how the flow executor should handle an invalid response to a challenge. RETRY returns the error message and a similar challenge to the executor. RESTART restarts the flow from the beginning, and RESTART_WITH_CONTEXT restarts the flow while keeping the current context.
 
@@ -39526,7 +39119,6 @@ components:
           maxLength: 80
         is_superuser:
           type: boolean
-          default: false
           description: Users added to this group will be superusers.
         parent:
           type: string
@@ -39569,11 +39161,9 @@ components:
             field as seaprate step.
         case_insensitive_matching:
           type: boolean
-          default: true
           description: When enabled, user fields are matched regardless of their casing.
         show_matched_user:
           type: boolean
-          default: true
           description: When a valid username/email has been entered, and this option
             is enabled, the user's username and avatar will be shown. Otherwise, the
             text that the user entered will be shown
@@ -39603,10 +39193,8 @@ components:
           description: Specify which sources should be shown.
         show_source_labels:
           type: boolean
-          default: false
         pretend_user_exists:
           type: boolean
-          default: true
           description: When enabled, the stage will succeed and continue even when
             incorrect user info is entered.
     PatchedInvitationRequest:
@@ -39626,7 +39214,6 @@ components:
           additionalProperties: {}
         single_use:
           type: boolean
-          default: false
           description: When enabled, the invitation will be deleted after usage.
         flow:
           type: string
@@ -39646,7 +39233,6 @@ components:
             $ref: '#/components/schemas/FlowSetRequest'
         continue_flow_without_invitation:
           type: boolean
-          default: false
           description: If this flag is set, this Stage will jump to the next Stage
             when no Invitation is given. By default this Stage will cancel the Flow
             when no invitation is given.
@@ -39659,7 +39245,6 @@ components:
           minLength: 1
         local:
           type: boolean
-          default: false
           description: If enabled, use the local connection. Required Docker socket/Kubernetes
             Integration
         kubeconfig:
@@ -39667,7 +39252,6 @@ components:
             the currently selected context.
         verify_ssl:
           type: boolean
-          default: true
           description: Verify SSL Certificates of the Kubernetes API endpoint
     PatchedLDAPPropertyMappingRequest:
       type: object
@@ -39716,7 +39300,6 @@ components:
         base_dn:
           type: string
           minLength: 1
-          default: DC=ldap,DC=goauthentik,DC=io
           description: DN under which objects are accessible.
         search_group:
           type: string
@@ -39730,12 +39313,10 @@ components:
           nullable: true
         tls_server_name:
           type: string
-          default: ''
         uid_start_number:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 2000
           description: The start for uidNumbers, this number is added to the user.pk
             to make sure that the numbers aren't too low for POSIX users. Default
             is 2000 to ensure that we don't collide with local users uidNumber
@@ -39743,22 +39324,16 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 4000
           description: The start for gidNumbers, this number is added to a number
             generated from the group.pk to make sure that the numbers aren't too low
             for POSIX groups. Default is 4000 to ensure that we don't collide with
             local groups or users primary groups gidNumber
         search_mode:
-          allOf:
-          - $ref: '#/components/schemas/LDAPAPIAccessMode'
-          default: direct
+          $ref: '#/components/schemas/LDAPAPIAccessMode'
         bind_mode:
-          allOf:
-          - $ref: '#/components/schemas/LDAPAPIAccessMode'
-          default: direct
+          $ref: '#/components/schemas/LDAPAPIAccessMode'
         mfa_support:
           type: boolean
-          default: true
           description: When enabled, code-based multi-factor authentication can be
             used by appending a semicolon and the TOTP code to the password. This
             should only be enabled if all users that will bind to this provider have
@@ -39780,7 +39355,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -39792,13 +39366,10 @@ components:
           nullable: true
           description: Flow to use when enrolling new users.
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -39810,7 +39381,6 @@ components:
         user_path_template:
           type: string
           minLength: 1
-          default: goauthentik.io/sources/%(slug)s
         server_uri:
           type: string
           minLength: 1
@@ -39834,11 +39404,9 @@ components:
           writeOnly: true
         start_tls:
           type: boolean
-          default: false
           title: Enable Start TLS
         sni:
           type: boolean
-          default: false
           title: Use Server URI for SNI verification
         base_dn:
           type: string
@@ -39854,34 +39422,27 @@ components:
         user_object_filter:
           type: string
           minLength: 1
-          default: (objectClass=person)
           description: Consider Objects matching this filter to be Users.
         group_object_filter:
           type: string
           minLength: 1
-          default: (objectClass=group)
           description: Consider Objects matching this filter to be Groups.
         group_membership_field:
           type: string
           minLength: 1
-          default: member
           description: Field which contains members of a group.
         object_uniqueness_field:
           type: string
           minLength: 1
-          default: objectSid
           description: Field which contains a unique Identifier.
         sync_users:
           type: boolean
-          default: true
         sync_users_password:
           type: boolean
-          default: true
           description: When a user changes their password, sync it back to LDAP. This
             can only be enabled on a single LDAP source.
         sync_groups:
           type: boolean
-          default: true
         sync_parent_group:
           type: string
           format: uuid
@@ -39912,7 +39473,6 @@ components:
           $ref: '#/components/schemas/EventRequest'
         seen:
           type: boolean
-          default: false
     PatchedNotificationRuleRequest:
       type: object
       description: NotificationRule Serializer
@@ -39931,7 +39491,6 @@ components:
         severity:
           allOf:
           - $ref: '#/components/schemas/SeverityEnum'
-          default: notice
           description: |-
             Controls which severity level the created notifications will have.
 
@@ -39952,9 +39511,7 @@ components:
           type: string
           minLength: 1
         mode:
-          allOf:
-          - $ref: '#/components/schemas/NotificationTransportModeEnum'
-          default: local
+          $ref: '#/components/schemas/NotificationTransportModeEnum'
         webhook_url:
           type: string
           format: uri
@@ -39964,7 +39521,6 @@ components:
           nullable: true
         send_once:
           type: boolean
-          default: false
           description: Only send notification once, for example when sending a webhook
             into a chat channel.
     PatchedNotificationWebhookMappingRequest:
@@ -40002,7 +39558,6 @@ components:
         client_type:
           allOf:
           - $ref: '#/components/schemas/ClientTypeEnum'
-          default: confidential
           description: |-
             Confidential clients are capable of maintaining the confidentiality of their credentials. Public clients are incapable
 
@@ -40018,24 +39573,20 @@ components:
         access_code_validity:
           type: string
           minLength: 1
-          default: minutes=1
           description: 'Access codes not valid on or after current time + this value
             (Format: hours=1;minutes=2;seconds=3).'
         access_token_validity:
           type: string
           minLength: 1
-          default: hours=1
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         refresh_token_validity:
           type: string
           minLength: 1
-          default: days=30
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         include_claims_in_id_token:
           type: boolean
-          default: true
           description: Include User claims from scopes in the id_token, for applications
             that don't access the userinfo endpoint.
         signing_key:
@@ -40046,12 +39597,10 @@ components:
             is set to RS256.
         redirect_uris:
           type: string
-          default: ''
           description: Enter each URI on a new line.
         sub_mode:
           allOf:
           - $ref: '#/components/schemas/SubModeEnum'
-          default: hashed_user_id
           description: |-
             Configure what data should be used as unique User Identifier. For most cases, the default should be fine.
 
@@ -40064,7 +39613,6 @@ components:
         issuer_mode:
           allOf:
           - $ref: '#/components/schemas/IssuerModeEnum'
-          default: per_provider
           description: |-
             Configure how the issuer field of the ID Token should be filled.
 
@@ -40094,7 +39642,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -40106,13 +39653,10 @@ components:
           nullable: true
           description: Flow to use when enrolling new users.
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -40124,7 +39668,6 @@ components:
         user_path_template:
           type: string
           minLength: 1
-          default: goauthentik.io/sources/%(slug)s
         provider_type:
           $ref: '#/components/schemas/ProviderTypeEnum'
         request_token_url:
@@ -40161,13 +39704,10 @@ components:
           minLength: 1
         additional_scopes:
           type: string
-          default: ''
         oidc_well_known_url:
           type: string
-          default: ''
         oidc_jwks_url:
           type: string
-          default: ''
         oidc_jwks: {}
     PatchedOutpostRequest:
       type: object
@@ -40177,9 +39717,7 @@ components:
           type: string
           minLength: 1
         type:
-          allOf:
-          - $ref: '#/components/schemas/OutpostTypeEnum'
-          default: proxy
+          $ref: '#/components/schemas/OutpostTypeEnum'
         providers:
           type: array
           items:
@@ -40211,7 +39749,6 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         days:
@@ -40220,7 +39757,6 @@ components:
           minimum: -2147483648
         deny_only:
           type: boolean
-          default: false
     PatchedPasswordPolicyRequest:
       type: object
       description: Password Policy Serializer
@@ -40230,66 +39766,53 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         password_field:
           type: string
           minLength: 1
-          default: password
           description: Field key to check, field keys defined in Prompt stages are
             available.
         amount_digits:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         amount_uppercase:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         amount_lowercase:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         amount_symbols:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         length_min:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
         symbol_charset:
           type: string
           minLength: 1
-          default: '!\"#$%&''()*+,-./:;<=>?@[\]^_`{|}~ '
         error_message:
           type: string
         check_static_rules:
           type: boolean
-          default: true
         check_have_i_been_pwned:
           type: boolean
-          default: false
         check_zxcvbn:
           type: boolean
-          default: false
         hibp_allowed_count:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 0
           description: How many times the password hash is allowed to be on haveibeenpwned
         zxcvbn_score_threshold:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 2
           description: If the zxcvbn score is equal or less than this value, the policy
             will fail.
     PatchedPasswordStageRequest:
@@ -40318,7 +39841,6 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 5
           description: How many attempts a user has before the flow is canceled. To
             lock the user out, use a reputation policy and a user_write stage.
     PatchedPermissionAssignRequest:
@@ -40361,7 +39883,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -40373,13 +39894,10 @@ components:
           nullable: true
           description: Flow to use when enrolling new users.
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -40391,7 +39909,6 @@ components:
         user_path_template:
           type: string
           minLength: 1
-          default: goauthentik.io/sources/%(slug)s
         client_id:
           type: string
           minLength: 1
@@ -40405,7 +39922,6 @@ components:
             Empty list allows every server.
         allow_friends:
           type: boolean
-          default: true
           description: Allow friends to authenticate, even if you don't share a server.
         plex_token:
           type: string
@@ -40431,11 +39947,9 @@ components:
           format: uuid
         negate:
           type: boolean
-          default: false
           description: Negates the outcome of the policy. Messages are unaffected.
         enabled:
           type: boolean
-          default: true
         order:
           type: integer
           maximum: 2147483647
@@ -40444,11 +39958,9 @@ components:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 30
           description: Timeout after which Policy execution is terminated.
         failure_result:
           type: boolean
-          default: false
           description: Result if the Policy execution fails.
     PatchedPromptRequest:
       type: object
@@ -40468,7 +39980,6 @@ components:
           $ref: '#/components/schemas/PromptTypeEnum'
         required:
           type: boolean
-          default: true
         placeholder:
           type: string
           description: Optionally provide a short hint that describes the expected
@@ -40483,20 +39994,16 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 0
         promptstage_set:
           type: array
           items:
             $ref: '#/components/schemas/StageRequest'
         sub_text:
           type: string
-          default: ''
         placeholder_expression:
           type: boolean
-          default: false
         initial_value_expression:
           type: boolean
-          default: false
     PatchedPromptStageRequest:
       type: object
       description: PromptStage Serializer
@@ -40549,7 +40056,6 @@ components:
           format: uri
         internal_host_ssl_validation:
           type: boolean
-          default: true
           description: Validate SSL Certificates of upstream servers
         certificate:
           type: string
@@ -40557,12 +40063,10 @@ components:
           nullable: true
         skip_path_regex:
           type: string
-          default: ''
           description: Regular expressions for which authentication is not required.
             Each new line is interpreted as a new Regular Expression.
         basic_auth_enabled:
           type: boolean
-          default: false
           title: Set HTTP-Basic Authentication
           description: Set a custom HTTP-Basic Authentication header based on values
             from authentik.
@@ -40579,7 +40083,6 @@ components:
         mode:
           allOf:
           - $ref: '#/components/schemas/ProxyMode'
-          default: proxy
           description: |-
             Enable support for forwardAuth in traefik and nginx auth_request. Exclusive with internal_host.
 
@@ -40588,12 +40091,10 @@ components:
             * `forward_domain` - Forward Domain
         intercept_header_auth:
           type: boolean
-          default: true
           description: When enabled, this provider will intercept the authorization
             header and authenticate requests based on its value.
         cookie_domain:
           type: string
-          default: ''
         jwks_sources:
           type: array
           items:
@@ -40605,13 +40106,11 @@ components:
         access_token_validity:
           type: string
           minLength: 1
-          default: hours=1
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         refresh_token_validity:
           type: string
           minLength: 1
-          default: days=30
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
     PatchedRACPropertyMappingRequest:
@@ -40661,12 +40160,10 @@ components:
         connection_expiry:
           type: string
           minLength: 1
-          default: hours=8
           description: 'Determines how long a session lasts. Default of 0 means that
             the sessions lasts until the browser is closed. (Format: hours=-1;minutes=-2;seconds=-3)'
         delete_token_on_disconnect:
           type: boolean
-          default: false
           description: When set to true, connection tokens will be deleted upon disconnect.
     PatchedRadiusProviderRequest:
       type: object
@@ -40693,7 +40190,6 @@ components:
         client_networks:
           type: string
           minLength: 1
-          default: 0.0.0.0/0, ::/0
           description: List of CIDRs (comma-separated) that clients can connect from.
             A more specific CIDR will match before a looser one. Clients connecting
             from a non-specified CIDR will be dropped.
@@ -40703,7 +40199,6 @@ components:
           description: Shared secret between clients and server to hash packets.
         mfa_support:
           type: boolean
-          default: true
           description: When enabled, code-based multi-factor authentication can be
             used by appending a semicolon and the TOTP code to the password. This
             should only be enabled if all users that will bind to this provider have
@@ -40718,20 +40213,16 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         check_ip:
           type: boolean
-          default: true
         check_username:
           type: boolean
-          default: true
         threshold:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: -5
     PatchedRoleRequest:
       type: object
       description: Role serializer
@@ -40794,30 +40285,25 @@ components:
           maxLength: 200
         audience:
           type: string
-          default: ''
           description: Value of the audience restriction field of the assertion. When
             left empty, no audience restriction will be added.
         issuer:
           type: string
           minLength: 1
-          default: authentik
           description: Also known as EntityID
         assertion_valid_not_before:
           type: string
           minLength: 1
-          default: minutes=-5
           description: 'Assertion valid not before current time + this value (Format:
             hours=-1;minutes=-2;seconds=-3).'
         assertion_valid_not_on_or_after:
           type: string
           minLength: 1
-          default: minutes=5
           description: 'Assertion not valid on or after current time + this value
             (Format: hours=1;minutes=2;seconds=3).'
         session_valid_not_on_or_after:
           type: string
           minLength: 1
-          default: minutes=86400
           description: 'Session not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         name_id_mapping:
@@ -40828,13 +40314,9 @@ components:
           description: Configure how the NameID value will be created. When left empty,
             the NameIDPolicy of the incoming request will be considered
         digest_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/DigestAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmlenc#sha256
+          $ref: '#/components/schemas/DigestAlgorithmEnum'
         signature_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/SignatureAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
+          $ref: '#/components/schemas/SignatureAlgorithmEnum'
         signing_kp:
           type: string
           format: uuid
@@ -40852,7 +40334,6 @@ components:
         sp_binding:
           allOf:
           - $ref: '#/components/schemas/SpBindingEnum'
-          default: redirect
           title: Service Provider Binding
           description: |-
             This determines how authentik sends the response back to the Service Provider.
@@ -40861,7 +40342,6 @@ components:
             * `post` - Post
         default_relay_state:
           type: string
-          default: ''
           description: Default relay_state value for IDP-initiated logins
     PatchedSAMLSourceRequest:
       type: object
@@ -40879,7 +40359,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -40891,13 +40370,10 @@ components:
           nullable: true
           description: Flow to use when enrolling new users.
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -40909,7 +40385,6 @@ components:
         user_path_template:
           type: string
           minLength: 1
-          default: goauthentik.io/sources/%(slug)s
         pre_authentication_flow:
           type: string
           format: uuid
@@ -40931,13 +40406,11 @@ components:
           maxLength: 200
         allow_idp_initiated:
           type: boolean
-          default: false
           description: Allows authentication flows initiated by the IdP. This can
             be a security risk, as no validation of the request ID is done.
         name_id_policy:
           allOf:
           - $ref: '#/components/schemas/NameIdPolicyEnum'
-          default: urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
           description: |-
             NameID Policy sent to the IdP. Can be unset, in which case no Policy is sent.
 
@@ -40947,9 +40420,7 @@ components:
             * `urn:oasis:names:tc:SAML:2.0:nameid-format:WindowsDomainQualifiedName` - Windows
             * `urn:oasis:names:tc:SAML:2.0:nameid-format:transient` - Transient
         binding_type:
-          allOf:
-          - $ref: '#/components/schemas/BindingTypeEnum'
-          default: REDIRECT
+          $ref: '#/components/schemas/BindingTypeEnum'
         verification_kp:
           type: string
           format: uuid
@@ -40965,17 +40436,12 @@ components:
           description: Keypair used to sign outgoing Responses going to the Identity
             Provider.
         digest_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/DigestAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmlenc#sha256
+          $ref: '#/components/schemas/DigestAlgorithmEnum'
         signature_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/SignatureAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
+          $ref: '#/components/schemas/SignatureAlgorithmEnum'
         temporary_user_delete_after:
           type: string
           minLength: 1
-          default: days=1
           title: Delete temporary users after
           description: 'Time offset when temporary users should be deleted. This only
             applies if your IDP uses the NameID Format ''transient'', and the user
@@ -41027,7 +40493,6 @@ components:
           description: Authentication token
         exclude_users_service_account:
           type: boolean
-          default: false
         filter_group:
           type: string
           format: uuid
@@ -41075,36 +40540,29 @@ components:
         avatars:
           type: string
           minLength: 1
-          default: gravatar,initials
           description: Configure how authentik should show avatars for users.
         default_user_change_name:
           type: boolean
-          default: true
           description: Enable the ability for users to change their name.
         default_user_change_email:
           type: boolean
-          default: false
           description: Enable the ability for users to change their email address.
         default_user_change_username:
           type: boolean
-          default: false
           description: Enable the ability for users to change their username.
         event_retention:
           type: string
           minLength: 1
-          default: days=365
           description: 'Events will be deleted after this duration.(Format: weeks=3;days=2;hours=3,seconds=2).'
         footer_links:
           description: The option configures the footer links on the flow executor
             pages.
         gdpr_compliance:
           type: boolean
-          default: true
           description: When enabled, all the events caused by a user will be deleted
             upon the user's deletion.
         impersonation:
           type: boolean
-          default: true
           description: Globally enable/disable impersonation.
     PatchedSourceStageRequest:
       type: object
@@ -41123,7 +40581,6 @@ components:
         resume_timeout:
           type: string
           minLength: 1
-          default: minutes=10
           description: 'Amount of time a user can take to return from the source to
             continue the flow (Format: hours=-1;minutes=-2;seconds=-3)'
     PatchedStaticDeviceRequest:
@@ -41157,7 +40614,6 @@ components:
           minLength: 1
         ready:
           type: boolean
-          default: false
     PatchedTokenRequest:
       type: object
       description: Token Serializer
@@ -41184,13 +40640,11 @@ components:
           type: integer
         description:
           type: string
-          default: ''
         expires:
           type: string
           format: date-time
         expiring:
           type: boolean
-          default: true
     PatchedUserDeleteStageRequest:
       type: object
       description: UserDeleteStage Serializer
@@ -41216,24 +40670,20 @@ components:
         session_duration:
           type: string
           minLength: 1
-          default: seconds=0
           description: 'Determines how long a session lasts. Default of 0 means that
             the sessions lasts until the browser is closed. (Format: hours=-1;minutes=-2;seconds=-3)'
         terminate_other_sessions:
           type: boolean
-          default: false
           description: Terminate all other sessions of the user logging in.
         remember_me_offset:
           type: string
           minLength: 1
-          default: seconds=0
           description: 'Offset the session will be extended by when the user picks
             the remember me option. Default of 0 means that the remember me option
             will not be shown. (Format: hours=-1;minutes=-2;seconds=-3)'
         network_binding:
           allOf:
           - $ref: '#/components/schemas/NetworkBindingEnum'
-          default: no_binding
           description: |-
             Bind sessions created by this stage to the configured network
 
@@ -41244,7 +40694,6 @@ components:
         geoip_binding:
           allOf:
           - $ref: '#/components/schemas/GeoipBindingEnum'
-          default: no_binding
           description: |-
             Bind sessions created by this stage to the configured GeoIP location
 
@@ -41290,7 +40739,6 @@ components:
           description: User's display name.
         is_active:
           type: boolean
-          default: true
           title: Active
           description: Designates whether this user should be treated as active. Unselect
             this instead of deleting accounts.
@@ -41314,11 +40762,8 @@ components:
         path:
           type: string
           minLength: 1
-          default: users
         type:
-          allOf:
-          - $ref: '#/components/schemas/UserTypeEnum'
-          default: internal
+          $ref: '#/components/schemas/UserTypeEnum'
     PatchedUserSAMLSourceConnectionRequest:
       type: object
       description: SAML Source Serializer
@@ -41340,12 +40785,9 @@ components:
           items:
             $ref: '#/components/schemas/FlowSetRequest'
         user_creation_mode:
-          allOf:
-          - $ref: '#/components/schemas/UserCreationModeEnum'
-          default: create_when_required
+          $ref: '#/components/schemas/UserCreationModeEnum'
         create_users_as_inactive:
           type: boolean
-          default: false
           description: When set, newly created users are inactive and cannot login.
         create_users_group:
           type: string
@@ -41353,12 +40795,9 @@ components:
           nullable: true
           description: Optionally add newly created users to this group.
         user_type:
-          allOf:
-          - $ref: '#/components/schemas/UserTypeEnum'
-          default: external
+          $ref: '#/components/schemas/UserTypeEnum'
         user_path_template:
           type: string
-          default: ''
     PatchedWebAuthnDeviceRequest:
       type: object
       description: Serializer for WebAuthn authenticator devices
@@ -41471,7 +40910,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -41499,13 +40937,10 @@ components:
           description: Return internal model name
           readOnly: true
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -41525,7 +40960,6 @@ components:
           readOnly: true
         user_path_template:
           type: string
-          default: goauthentik.io/sources/%(slug)s
         icon:
           type: string
           nullable: true
@@ -41544,7 +40978,6 @@ components:
             Empty list allows every server.
         allow_friends:
           type: boolean
-          default: true
           description: Allow friends to authenticate, even if you don't share a server.
         plex_token:
           type: string
@@ -41614,7 +41047,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -41626,13 +41058,10 @@ components:
           nullable: true
           description: Flow to use when enrolling new users.
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -41644,7 +41073,6 @@ components:
         user_path_template:
           type: string
           minLength: 1
-          default: goauthentik.io/sources/%(slug)s
         client_id:
           type: string
           minLength: 1
@@ -41658,7 +41086,6 @@ components:
             Empty list allows every server.
         allow_friends:
           type: boolean
-          default: true
           description: Allow friends to authenticate, even if you don't share a server.
         plex_token:
           type: string
@@ -41690,7 +41117,6 @@ components:
           type: string
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         component:
@@ -41758,11 +41184,9 @@ components:
           format: uuid
         negate:
           type: boolean
-          default: false
           description: Negates the outcome of the policy. Messages are unaffected.
         enabled:
           type: boolean
-          default: true
         order:
           type: integer
           maximum: 2147483647
@@ -41771,11 +41195,9 @@ components:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 30
           description: Timeout after which Policy execution is terminated.
         failure_result:
           type: boolean
-          default: false
           description: Result if the Policy execution fails.
       required:
       - group_obj
@@ -41804,11 +41226,9 @@ components:
           format: uuid
         negate:
           type: boolean
-          default: false
           description: Negates the outcome of the policy. Messages are unaffected.
         enabled:
           type: boolean
-          default: true
         order:
           type: integer
           maximum: 2147483647
@@ -41817,11 +41237,9 @@ components:
           type: integer
           maximum: 2147483647
           minimum: 0
-          default: 30
           description: Timeout after which Policy execution is terminated.
         failure_result:
           type: boolean
-          default: false
           description: Result if the Policy execution fails.
       required:
       - order
@@ -41843,7 +41261,6 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
       required:
@@ -41900,7 +41317,6 @@ components:
           $ref: '#/components/schemas/PromptTypeEnum'
         required:
           type: boolean
-          default: true
         placeholder:
           type: string
           description: Optionally provide a short hint that describes the expected
@@ -41915,20 +41331,16 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 0
         promptstage_set:
           type: array
           items:
             $ref: '#/components/schemas/Stage'
         sub_text:
           type: string
-          default: ''
         placeholder_expression:
           type: boolean
-          default: false
         initial_value_expression:
           type: boolean
-          default: false
       required:
       - field_key
       - label
@@ -41988,7 +41400,6 @@ components:
           $ref: '#/components/schemas/PromptTypeEnum'
         required:
           type: boolean
-          default: true
         placeholder:
           type: string
           description: Optionally provide a short hint that describes the expected
@@ -42003,20 +41414,16 @@ components:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: 0
         promptstage_set:
           type: array
           items:
             $ref: '#/components/schemas/StageRequest'
         sub_text:
           type: string
-          default: ''
         placeholder_expression:
           type: boolean
-          default: false
         initial_value_expression:
           type: boolean
-          default: false
       required:
       - field_key
       - label
@@ -42394,7 +41801,6 @@ components:
           format: uri
         internal_host_ssl_validation:
           type: boolean
-          default: true
           description: Validate SSL Certificates of upstream servers
         client_id:
           type: string
@@ -42414,12 +41820,10 @@ components:
           nullable: true
         skip_path_regex:
           type: string
-          default: ''
           description: Regular expressions for which authentication is not required.
             Each new line is interpreted as a new Regular Expression.
         basic_auth_enabled:
           type: boolean
-          default: false
           title: Set HTTP-Basic Authentication
           description: Set a custom HTTP-Basic Authentication header based on values
             from authentik.
@@ -42436,7 +41840,6 @@ components:
         mode:
           allOf:
           - $ref: '#/components/schemas/ProxyMode'
-          default: proxy
           description: |-
             Enable support for forwardAuth in traefik and nginx auth_request. Exclusive with internal_host.
 
@@ -42445,7 +41848,6 @@ components:
             * `forward_domain` - Forward Domain
         cookie_domain:
           type: string
-          default: ''
         access_token_validity:
           type: number
           format: double
@@ -42454,7 +41856,6 @@ components:
           readOnly: true
         intercept_header_auth:
           type: boolean
-          default: true
           description: When enabled, this provider will intercept the authorization
             header and authenticate requests based on its value.
         scopes_to_request:
@@ -42550,7 +41951,6 @@ components:
           format: uri
         internal_host_ssl_validation:
           type: boolean
-          default: true
           description: Validate SSL Certificates of upstream servers
         certificate:
           type: string
@@ -42558,12 +41958,10 @@ components:
           nullable: true
         skip_path_regex:
           type: string
-          default: ''
           description: Regular expressions for which authentication is not required.
             Each new line is interpreted as a new Regular Expression.
         basic_auth_enabled:
           type: boolean
-          default: false
           title: Set HTTP-Basic Authentication
           description: Set a custom HTTP-Basic Authentication header based on values
             from authentik.
@@ -42580,7 +41978,6 @@ components:
         mode:
           allOf:
           - $ref: '#/components/schemas/ProxyMode'
-          default: proxy
           description: |-
             Enable support for forwardAuth in traefik and nginx auth_request. Exclusive with internal_host.
 
@@ -42589,7 +41986,6 @@ components:
             * `forward_domain` - Forward Domain
         intercept_header_auth:
           type: boolean
-          default: true
           description: When enabled, this provider will intercept the authorization
             header and authenticate requests based on its value.
         redirect_uris:
@@ -42597,7 +41993,6 @@ components:
           readOnly: true
         cookie_domain:
           type: string
-          default: ''
         jwks_sources:
           type: array
           items:
@@ -42608,12 +42003,10 @@ components:
           title: Any JWT signed by the JWK of the selected source can be used to authenticate.
         access_token_validity:
           type: string
-          default: hours=1
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         refresh_token_validity:
           type: string
-          default: days=30
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         outpost_set:
@@ -42668,7 +42061,6 @@ components:
           format: uri
         internal_host_ssl_validation:
           type: boolean
-          default: true
           description: Validate SSL Certificates of upstream servers
         certificate:
           type: string
@@ -42676,12 +42068,10 @@ components:
           nullable: true
         skip_path_regex:
           type: string
-          default: ''
           description: Regular expressions for which authentication is not required.
             Each new line is interpreted as a new Regular Expression.
         basic_auth_enabled:
           type: boolean
-          default: false
           title: Set HTTP-Basic Authentication
           description: Set a custom HTTP-Basic Authentication header based on values
             from authentik.
@@ -42698,7 +42088,6 @@ components:
         mode:
           allOf:
           - $ref: '#/components/schemas/ProxyMode'
-          default: proxy
           description: |-
             Enable support for forwardAuth in traefik and nginx auth_request. Exclusive with internal_host.
 
@@ -42707,12 +42096,10 @@ components:
             * `forward_domain` - Forward Domain
         intercept_header_auth:
           type: boolean
-          default: true
           description: When enabled, this provider will intercept the authorization
             header and authenticate requests based on its value.
         cookie_domain:
           type: string
-          default: ''
         jwks_sources:
           type: array
           items:
@@ -42724,13 +42111,11 @@ components:
         access_token_validity:
           type: string
           minLength: 1
-          default: hours=1
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         refresh_token_validity:
           type: string
           minLength: 1
-          default: days=30
           description: 'Tokens not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
       required:
@@ -42874,12 +42259,10 @@ components:
           readOnly: true
         connection_expiry:
           type: string
-          default: hours=8
           description: 'Determines how long a session lasts. Default of 0 means that
             the sessions lasts until the browser is closed. (Format: hours=-1;minutes=-2;seconds=-3)'
         delete_token_on_disconnect:
           type: boolean
-          default: false
           description: When set to true, connection tokens will be deleted upon disconnect.
       required:
       - assigned_application_name
@@ -42920,12 +42303,10 @@ components:
         connection_expiry:
           type: string
           minLength: 1
-          default: hours=8
           description: 'Determines how long a session lasts. Default of 0 means that
             the sessions lasts until the browser is closed. (Format: hours=-1;minutes=-2;seconds=-3)'
         delete_token_on_disconnect:
           type: boolean
-          default: false
           description: When set to true, connection tokens will be deleted upon disconnect.
       required:
       - authorization_flow
@@ -42946,7 +42327,6 @@ components:
           type: string
         client_networks:
           type: string
-          default: 0.0.0.0/0, ::/0
           description: List of CIDRs (comma-separated) that clients can connect from.
             A more specific CIDR will match before a looser one. Clients connecting
             from a non-specified CIDR will be dropped.
@@ -42955,7 +42335,6 @@ components:
           description: Shared secret between clients and server to hash packets.
         mfa_support:
           type: boolean
-          default: true
           description: When enabled, code-based multi-factor authentication can be
             used by appending a semicolon and the TOTP code to the password. This
             should only be enabled if all users that will bind to this provider have
@@ -43025,7 +42404,6 @@ components:
           readOnly: true
         client_networks:
           type: string
-          default: 0.0.0.0/0, ::/0
           description: List of CIDRs (comma-separated) that clients can connect from.
             A more specific CIDR will match before a looser one. Clients connecting
             from a non-specified CIDR will be dropped.
@@ -43039,7 +42417,6 @@ components:
           readOnly: true
         mfa_support:
           type: boolean
-          default: true
           description: When enabled, code-based multi-factor authentication can be
             used by appending a semicolon and the TOTP code to the password. This
             should only be enabled if all users that will bind to this provider have
@@ -43083,7 +42460,6 @@ components:
         client_networks:
           type: string
           minLength: 1
-          default: 0.0.0.0/0, ::/0
           description: List of CIDRs (comma-separated) that clients can connect from.
             A more specific CIDR will match before a looser one. Clients connecting
             from a non-specified CIDR will be dropped.
@@ -43093,7 +42469,6 @@ components:
           description: Shared secret between clients and server to hash packets.
         mfa_support:
           type: boolean
-          default: true
           description: When enabled, code-based multi-factor authentication can be
             used by appending a semicolon and the TOTP code to the password. This
             should only be enabled if all users that will bind to this provider have
@@ -43143,7 +42518,6 @@ components:
           maximum: 9223372036854775807
           minimum: -9223372036854775808
           format: int64
-          default: 0
         updated:
           type: string
           format: date-time
@@ -43165,7 +42539,6 @@ components:
           type: string
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         component:
@@ -43190,15 +42563,12 @@ components:
           readOnly: true
         check_ip:
           type: boolean
-          default: true
         check_username:
           type: boolean
-          default: true
         threshold:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: -5
       required:
       - bound_to
       - component
@@ -43216,20 +42586,16 @@ components:
           minLength: 1
         execution_logging:
           type: boolean
-          default: false
           description: When this option is enabled, all executions of this policy
             will be logged. By default, only execution errors are logged.
         check_ip:
           type: boolean
-          default: true
         check_username:
           type: boolean
-          default: true
         threshold:
           type: integer
           maximum: 2147483647
           minimum: -2147483648
-          default: -5
       required:
       - name
     ResidentKeyRequirementEnum:
@@ -43472,26 +42838,21 @@ components:
           maxLength: 200
         audience:
           type: string
-          default: ''
           description: Value of the audience restriction field of the assertion. When
             left empty, no audience restriction will be added.
         issuer:
           type: string
-          default: authentik
           description: Also known as EntityID
         assertion_valid_not_before:
           type: string
-          default: minutes=-5
           description: 'Assertion valid not before current time + this value (Format:
             hours=-1;minutes=-2;seconds=-3).'
         assertion_valid_not_on_or_after:
           type: string
-          default: minutes=5
           description: 'Assertion not valid on or after current time + this value
             (Format: hours=1;minutes=2;seconds=3).'
         session_valid_not_on_or_after:
           type: string
-          default: minutes=86400
           description: 'Session not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         name_id_mapping:
@@ -43502,13 +42863,9 @@ components:
           description: Configure how the NameID value will be created. When left empty,
             the NameIDPolicy of the incoming request will be considered
         digest_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/DigestAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmlenc#sha256
+          $ref: '#/components/schemas/DigestAlgorithmEnum'
         signature_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/SignatureAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
+          $ref: '#/components/schemas/SignatureAlgorithmEnum'
         signing_kp:
           type: string
           format: uuid
@@ -43526,7 +42883,6 @@ components:
         sp_binding:
           allOf:
           - $ref: '#/components/schemas/SpBindingEnum'
-          default: redirect
           title: Service Provider Binding
           description: |-
             This determines how authentik sends the response back to the Service Provider.
@@ -43535,7 +42891,6 @@ components:
             * `post` - Post
         default_relay_state:
           type: string
-          default: ''
           description: Default relay_state value for IDP-initiated logins
         url_download_metadata:
           type: string
@@ -43626,30 +42981,25 @@ components:
           maxLength: 200
         audience:
           type: string
-          default: ''
           description: Value of the audience restriction field of the assertion. When
             left empty, no audience restriction will be added.
         issuer:
           type: string
           minLength: 1
-          default: authentik
           description: Also known as EntityID
         assertion_valid_not_before:
           type: string
           minLength: 1
-          default: minutes=-5
           description: 'Assertion valid not before current time + this value (Format:
             hours=-1;minutes=-2;seconds=-3).'
         assertion_valid_not_on_or_after:
           type: string
           minLength: 1
-          default: minutes=5
           description: 'Assertion not valid on or after current time + this value
             (Format: hours=1;minutes=2;seconds=3).'
         session_valid_not_on_or_after:
           type: string
           minLength: 1
-          default: minutes=86400
           description: 'Session not valid on or after current time + this value (Format:
             hours=1;minutes=2;seconds=3).'
         name_id_mapping:
@@ -43660,13 +43010,9 @@ components:
           description: Configure how the NameID value will be created. When left empty,
             the NameIDPolicy of the incoming request will be considered
         digest_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/DigestAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmlenc#sha256
+          $ref: '#/components/schemas/DigestAlgorithmEnum'
         signature_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/SignatureAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
+          $ref: '#/components/schemas/SignatureAlgorithmEnum'
         signing_kp:
           type: string
           format: uuid
@@ -43684,7 +43030,6 @@ components:
         sp_binding:
           allOf:
           - $ref: '#/components/schemas/SpBindingEnum'
-          default: redirect
           title: Service Provider Binding
           description: |-
             This determines how authentik sends the response back to the Service Provider.
@@ -43693,7 +43038,6 @@ components:
             * `post` - Post
         default_relay_state:
           type: string
-          default: ''
           description: Default relay_state value for IDP-initiated logins
       required:
       - acs_url
@@ -43718,7 +43062,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -43746,13 +43089,10 @@ components:
           description: Return internal model name
           readOnly: true
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -43772,7 +43112,6 @@ components:
           readOnly: true
         user_path_template:
           type: string
-          default: goauthentik.io/sources/%(slug)s
         icon:
           type: string
           nullable: true
@@ -43800,13 +43139,11 @@ components:
           maxLength: 200
         allow_idp_initiated:
           type: boolean
-          default: false
           description: Allows authentication flows initiated by the IdP. This can
             be a security risk, as no validation of the request ID is done.
         name_id_policy:
           allOf:
           - $ref: '#/components/schemas/NameIdPolicyEnum'
-          default: urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
           description: |-
             NameID Policy sent to the IdP. Can be unset, in which case no Policy is sent.
 
@@ -43816,9 +43153,7 @@ components:
             * `urn:oasis:names:tc:SAML:2.0:nameid-format:WindowsDomainQualifiedName` - Windows
             * `urn:oasis:names:tc:SAML:2.0:nameid-format:transient` - Transient
         binding_type:
-          allOf:
-          - $ref: '#/components/schemas/BindingTypeEnum'
-          default: REDIRECT
+          $ref: '#/components/schemas/BindingTypeEnum'
         verification_kp:
           type: string
           format: uuid
@@ -43834,16 +43169,11 @@ components:
           description: Keypair used to sign outgoing Responses going to the Identity
             Provider.
         digest_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/DigestAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmlenc#sha256
+          $ref: '#/components/schemas/DigestAlgorithmEnum'
         signature_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/SignatureAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
+          $ref: '#/components/schemas/SignatureAlgorithmEnum'
         temporary_user_delete_after:
           type: string
-          default: days=1
           title: Delete temporary users after
           description: 'Time offset when temporary users should be deleted. This only
             applies if your IDP uses the NameID Format ''transient'', and the user
@@ -43876,7 +43206,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -43888,13 +43217,10 @@ components:
           nullable: true
           description: Flow to use when enrolling new users.
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -43906,7 +43232,6 @@ components:
         user_path_template:
           type: string
           minLength: 1
-          default: goauthentik.io/sources/%(slug)s
         pre_authentication_flow:
           type: string
           format: uuid
@@ -43928,13 +43253,11 @@ components:
           maxLength: 200
         allow_idp_initiated:
           type: boolean
-          default: false
           description: Allows authentication flows initiated by the IdP. This can
             be a security risk, as no validation of the request ID is done.
         name_id_policy:
           allOf:
           - $ref: '#/components/schemas/NameIdPolicyEnum'
-          default: urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
           description: |-
             NameID Policy sent to the IdP. Can be unset, in which case no Policy is sent.
 
@@ -43944,9 +43267,7 @@ components:
             * `urn:oasis:names:tc:SAML:2.0:nameid-format:WindowsDomainQualifiedName` - Windows
             * `urn:oasis:names:tc:SAML:2.0:nameid-format:transient` - Transient
         binding_type:
-          allOf:
-          - $ref: '#/components/schemas/BindingTypeEnum'
-          default: REDIRECT
+          $ref: '#/components/schemas/BindingTypeEnum'
         verification_kp:
           type: string
           format: uuid
@@ -43962,17 +43283,12 @@ components:
           description: Keypair used to sign outgoing Responses going to the Identity
             Provider.
         digest_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/DigestAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmlenc#sha256
+          $ref: '#/components/schemas/DigestAlgorithmEnum'
         signature_algorithm:
-          allOf:
-          - $ref: '#/components/schemas/SignatureAlgorithmEnum'
-          default: http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
+          $ref: '#/components/schemas/SignatureAlgorithmEnum'
         temporary_user_delete_after:
           type: string
           minLength: 1
-          default: days=1
           title: Delete temporary users after
           description: 'Time offset when temporary users should be deleted. This only
             applies if your IDP uses the NameID Format ''transient'', and the user
@@ -44102,7 +43418,6 @@ components:
           description: Authentication token
         exclude_users_service_account:
           type: boolean
-          default: false
         filter_group:
           type: string
           format: uuid
@@ -44146,7 +43461,6 @@ components:
           description: Authentication token
         exclude_users_service_account:
           type: boolean
-          default: false
         filter_group:
           type: string
           format: uuid
@@ -44315,7 +43629,6 @@ components:
           type: string
         local:
           type: boolean
-          default: false
           description: If enabled, use the local connection. Required Docker socket/Kubernetes
             Integration
         component:
@@ -44350,7 +43663,6 @@ components:
           minLength: 1
         local:
           type: boolean
-          default: false
           description: If enabled, use the local connection. Required Docker socket/Kubernetes
             Integration
       required:
@@ -44386,35 +43698,28 @@ components:
       properties:
         avatars:
           type: string
-          default: gravatar,initials
           description: Configure how authentik should show avatars for users.
         default_user_change_name:
           type: boolean
-          default: true
           description: Enable the ability for users to change their name.
         default_user_change_email:
           type: boolean
-          default: false
           description: Enable the ability for users to change their email address.
         default_user_change_username:
           type: boolean
-          default: false
           description: Enable the ability for users to change their username.
         event_retention:
           type: string
-          default: days=365
           description: 'Events will be deleted after this duration.(Format: weeks=3;days=2;hours=3,seconds=2).'
         footer_links:
           description: The option configures the footer links on the flow executor
             pages.
         gdpr_compliance:
           type: boolean
-          default: true
           description: When enabled, all the events caused by a user will be deleted
             upon the user's deletion.
         impersonation:
           type: boolean
-          default: true
           description: Globally enable/disable impersonation.
     SettingsRequest:
       type: object
@@ -44423,36 +43728,29 @@ components:
         avatars:
           type: string
           minLength: 1
-          default: gravatar,initials
           description: Configure how authentik should show avatars for users.
         default_user_change_name:
           type: boolean
-          default: true
           description: Enable the ability for users to change their name.
         default_user_change_email:
           type: boolean
-          default: false
           description: Enable the ability for users to change their email address.
         default_user_change_username:
           type: boolean
-          default: false
           description: Enable the ability for users to change their username.
         event_retention:
           type: string
           minLength: 1
-          default: days=365
           description: 'Events will be deleted after this duration.(Format: weeks=3;days=2;hours=3,seconds=2).'
         footer_links:
           description: The option configures the footer links on the flow executor
             pages.
         gdpr_compliance:
           type: boolean
-          default: true
           description: When enabled, all the events caused by a user will be deleted
             upon the user's deletion.
         impersonation:
           type: boolean
-          default: true
           description: Globally enable/disable impersonation.
     SeverityEnum:
       enum:
@@ -44519,7 +43817,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -44547,13 +43844,10 @@ components:
           description: Return internal model name
           readOnly: true
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -44573,7 +43867,6 @@ components:
           readOnly: true
         user_path_template:
           type: string
-          default: goauthentik.io/sources/%(slug)s
         icon:
           type: string
           nullable: true
@@ -44607,7 +43900,6 @@ components:
           pattern: ^[-a-zA-Z0-9_]+$
         enabled:
           type: boolean
-          default: true
         authentication_flow:
           type: string
           format: uuid
@@ -44619,13 +43911,10 @@ components:
           nullable: true
           description: Flow to use when enrolling new users.
         policy_engine_mode:
-          allOf:
-          - $ref: '#/components/schemas/PolicyEngineMode'
-          default: any
+          $ref: '#/components/schemas/PolicyEngineMode'
         user_matching_mode:
           allOf:
           - $ref: '#/components/schemas/UserMatchingModeEnum'
-          default: identifier
           description: |-
             How the source determines if an existing user should be authenticated or a new user enrolled.
 
@@ -44637,7 +43926,6 @@ components:
         user_path_template:
           type: string
           minLength: 1
-          default: goauthentik.io/sources/%(slug)s
       required:
       - name
       - slug
@@ -44677,7 +43965,6 @@ components:
           format: uuid
         resume_timeout:
           type: string
-          default: minutes=10
           description: 'Amount of time a user can take to return from the source to
             continue the flow (Format: hours=-1;minutes=-2;seconds=-3)'
       required:
@@ -44705,7 +43992,6 @@ components:
         resume_timeout:
           type: string
           minLength: 1
-          default: minutes=10
           description: 'Amount of time a user can take to return from the source to
             continue the flow (Format: hours=-1;minutes=-2;seconds=-3)'
       required:
@@ -45083,7 +44369,6 @@ components:
           type: string
         ready:
           type: boolean
-          default: false
       required:
       - name
       - schema_name
@@ -45134,7 +44419,6 @@ components:
           minLength: 1
         ready:
           type: boolean
-          default: false
       required:
       - name
       - schema_name
@@ -45171,13 +44455,11 @@ components:
           readOnly: true
         description:
           type: string
-          default: ''
         expires:
           type: string
           format: date-time
         expiring:
           type: boolean
-          default: true
       required:
       - identifier
       - pk
@@ -45211,7 +44493,6 @@ components:
           readOnly: true
         revoked:
           type: boolean
-          default: false
       required:
       - id_token
       - is_expired
@@ -45245,13 +44526,11 @@ components:
           type: integer
         description:
           type: string
-          default: ''
         expires:
           type: string
           format: date-time
         expiring:
           type: boolean
-          default: true
       required:
       - identifier
     TokenSetKeyRequest:
@@ -45376,7 +44655,6 @@ components:
           description: User's display name.
         is_active:
           type: boolean
-          default: true
           title: Active
           description: Designates whether this user should be treated as active. Unselect
             this instead of deleting accounts.
@@ -45414,11 +44692,8 @@ components:
           readOnly: true
         path:
           type: string
-          default: users
         type:
-          allOf:
-          - $ref: '#/components/schemas/UserTypeEnum'
-          default: internal
+          $ref: '#/components/schemas/UserTypeEnum'
         uuid:
           type: string
           format: uuid
@@ -45459,7 +44734,6 @@ components:
           description: User's display name.
         is_active:
           type: boolean
-          default: true
           title: Active
           description: Designates whether this user should be treated as active. Unselect
             this instead of deleting accounts.
@@ -45504,7 +44778,6 @@ components:
           format: date-time
         expiring:
           type: boolean
-          default: true
         user:
           $ref: '#/components/schemas/User'
         application:
@@ -45605,7 +44878,6 @@ components:
           maxLength: 80
         is_superuser:
           type: boolean
-          default: false
           description: Users added to this group will be superusers.
         parent:
           type: string
@@ -45632,7 +44904,6 @@ components:
           maxLength: 80
         is_superuser:
           type: boolean
-          default: false
           description: Users added to this group will be superusers.
         parent:
           type: string
@@ -45713,23 +44984,19 @@ components:
             $ref: '#/components/schemas/FlowSet'
         session_duration:
           type: string
-          default: seconds=0
           description: 'Determines how long a session lasts. Default of 0 means that
             the sessions lasts until the browser is closed. (Format: hours=-1;minutes=-2;seconds=-3)'
         terminate_other_sessions:
           type: boolean
-          default: false
           description: Terminate all other sessions of the user logging in.
         remember_me_offset:
           type: string
-          default: seconds=0
           description: 'Offset the session will be extended by when the user picks
             the remember me option. Default of 0 means that the remember me option
             will not be shown. (Format: hours=-1;minutes=-2;seconds=-3)'
         network_binding:
           allOf:
           - $ref: '#/components/schemas/NetworkBindingEnum'
-          default: no_binding
           description: |-
             Bind sessions created by this stage to the configured network
 
@@ -45740,7 +45007,6 @@ components:
         geoip_binding:
           allOf:
           - $ref: '#/components/schemas/GeoipBindingEnum'
-          default: no_binding
           description: |-
             Bind sessions created by this stage to the configured GeoIP location
 
@@ -45769,24 +45035,20 @@ components:
         session_duration:
           type: string
           minLength: 1
-          default: seconds=0
           description: 'Determines how long a session lasts. Default of 0 means that
             the sessions lasts until the browser is closed. (Format: hours=-1;minutes=-2;seconds=-3)'
         terminate_other_sessions:
           type: boolean
-          default: false
           description: Terminate all other sessions of the user logging in.
         remember_me_offset:
           type: string
           minLength: 1
-          default: seconds=0
           description: 'Offset the session will be extended by when the user picks
             the remember me option. Default of 0 means that the remember me option
             will not be shown. (Format: hours=-1;minutes=-2;seconds=-3)'
         network_binding:
           allOf:
           - $ref: '#/components/schemas/NetworkBindingEnum'
-          default: no_binding
           description: |-
             Bind sessions created by this stage to the configured network
 
@@ -45797,7 +45059,6 @@ components:
         geoip_binding:
           allOf:
           - $ref: '#/components/schemas/GeoipBindingEnum'
-          default: no_binding
           description: |-
             Bind sessions created by this stage to the configured GeoIP location
 
@@ -45996,7 +45257,6 @@ components:
           description: User's display name.
         is_active:
           type: boolean
-          default: true
           title: Active
           description: Designates whether this user should be treated as active. Unselect
             this instead of deleting accounts.
@@ -46020,11 +45280,8 @@ components:
         path:
           type: string
           minLength: 1
-          default: users
         type:
-          allOf:
-          - $ref: '#/components/schemas/UserTypeEnum'
-          default: internal
+          $ref: '#/components/schemas/UserTypeEnum'
       required:
       - name
       - username
@@ -46110,9 +45367,7 @@ components:
           description: Get user settings with brand and group settings applied
           readOnly: true
         type:
-          allOf:
-          - $ref: '#/components/schemas/UserTypeEnum'
-          default: internal
+          $ref: '#/components/schemas/UserTypeEnum'
         system_permissions:
           type: array
           items:
@@ -46274,12 +45529,9 @@ components:
           items:
             $ref: '#/components/schemas/FlowSet'
         user_creation_mode:
-          allOf:
-          - $ref: '#/components/schemas/UserCreationModeEnum'
-          default: create_when_required
+          $ref: '#/components/schemas/UserCreationModeEnum'
         create_users_as_inactive:
           type: boolean
-          default: false
           description: When set, newly created users are inactive and cannot login.
         create_users_group:
           type: string
@@ -46287,12 +45539,9 @@ components:
           nullable: true
           description: Optionally add newly created users to this group.
         user_type:
-          allOf:
-          - $ref: '#/components/schemas/UserTypeEnum'
-          default: external
+          $ref: '#/components/schemas/UserTypeEnum'
         user_path_template:
           type: string
-          default: ''
       required:
       - component
       - meta_model_name
@@ -46312,12 +45561,9 @@ components:
           items:
             $ref: '#/components/schemas/FlowSetRequest'
         user_creation_mode:
-          allOf:
-          - $ref: '#/components/schemas/UserCreationModeEnum'
-          default: create_when_required
+          $ref: '#/components/schemas/UserCreationModeEnum'
         create_users_as_inactive:
           type: boolean
-          default: false
           description: When set, newly created users are inactive and cannot login.
         create_users_group:
           type: string
@@ -46325,12 +45571,9 @@ components:
           nullable: true
           description: Optionally add newly created users to this group.
         user_type:
-          allOf:
-          - $ref: '#/components/schemas/UserTypeEnum'
-          default: external
+          $ref: '#/components/schemas/UserTypeEnum'
         user_path_template:
           type: string
-          default: ''
       required:
       - name
     ValidationError:
